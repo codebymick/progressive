@@ -4,3 +4,5 @@ node_modules
 app/css/app.css
 app/js/app.js
 builds/development/images/**
+.idea
+*.svg
