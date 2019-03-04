@@ -13,20 +13,24 @@ $(function() {
       })
   }
 
-  $.getJSON('/data/pets.json', function(data) {
+  $.getJSON('/data/inspiration.json', function(data) {
     var slideshowTemplate = $('#slideshow-template').html();
     var slideshowScript = Handlebars.compile(slideshowTemplate);
 
-    var adoptionTemplate = $('#adoption-template').html();
-    var adoptionScript = Handlebars.compile(adoptionTemplate);
+    var dashboardTemplate = $('#dashboard-template').html();
+    var dashboardScript = Handlebars.compile(dashboardTemplate);
 
-    var appointmentsTemplate = $('#appointments-template').html();
-    var appointmentsScript = Handlebars.compile(appointmentsTemplate);
+    var projectsTemplate = $('#projects-template').html();
+    var projectsScript = Handlebars.compile(projectsTemplate);
 
-    $('.loader').fadeOut(1000);
+    var contactTemplate = $('#contact-template').html();
+    var contactScript = Handlebars.compile(contactTemplate);
+
+    $('.loader').fadeOut(2000);
     $('#slideshow-content').append(slideshowScript(data));
-    $('#adoption-content').append(adoptionScript(data));
-    $('#appointments-content').append(appointmentsScript(data));
+    $('#dashboard-content').append(dashboardScript(data));
+    $('#projects-content').append(projectsScript(data));
+    $('#contact-content').append(contactScript(data));
 
     //replace IMG inside carousels with a background image
     $('#slideshow .item img').each(function() {
@@ -59,7 +63,7 @@ $(function() {
     $('.modal-petbreed').html($(this).data('petbreed'));
     $('.modal-petowner').html($(this).data('petowner'));
     $('.modal-petinfo').html($(this).data('petinfo'));
-    $('.modal-petimage').attr('src', 'images/pets/' + $(this).data('petimage')+ '.jpg');
+    $('.modal-petimage').attr('src', 'images/inspiration/' + $(this).data('petimage')+ '.jpg');
     $('.modal-petimage').attr('alt', $(this).data('petname')+ ' photo');
   });
 

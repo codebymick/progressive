@@ -1,0 +1,35 @@
+{
+  "slideshow":
+    [
+      { "project": "Casper", "owner": "", "type": "", "breed": "", "description": "", "reason": "", "filename": "sourceCode"},
+      { "project": "Chip", "owner": "", "type": "", "breed": "", "description": "", "reason": "", "filename": "jenga"},
+      { "project": "Nugget", "owner": "", "type": "", "breed": "", "description": "", "reason": "", "filename": "aerialCode"},
+      { "project": "Casper", "owner": " ", "type": "", "breed": "", "description": "", "reason": "", "filename": "keyboard"},
+      { "project": "Chip", "owner": " ", "type": "", "breed": "", "description": "", "reason": "", "filename": "macbookPro"},
+      { "project": "Nugget", "owner": " ", "type": "", "breed": "", "description": "", "reason": "", "filename": "moreBack"},
+      { "project": "Casper", "owner": " ", "type": "", "breed": "", "description": "", "reason": "", "filename": "codeBack"},
+      { "project": "Chip", "owner": " ", "type": "", "breed": "", "description": "", "reason": " ", "filename": "rubiks"}
+  ],
+
+"dashboard":
+  [
+    { "project": "Pepe", "owner": "Reggie Tupp", "type": "Rabbit", "breed": "Cinnamon rabbit", "description": "Six-month-old Pepe is very active and is always keeping his owners, and us, on our toes!", "reason": "It's time for this rabbit's post spaying surgery checkup", "filename": "sourceCode"},
+    { "project": "Nadalee", "owner": "Krystle Valerija", "type": "Dog", "breed": "Chihuahua", "description": "Nadalee is a 7-year-old long hair Chihuahua with a very pleasant, laid back, temperament.", "reason": "This dog is coming in for his monthly nail trim and grooming", "filename": "jenga"},
+    { "project": "Zera", "owner": "Austin Finnagan", "type": "Iguana", "breed": "Cayman brac iguana", "description": "This iguana is on the endangered species list, and is thriving well in her owner’s home.", "reason": "This iguana's is showing signs of dementia associated with his old age", "filename": "aerialCode"},
+    { "project": "Oddball", "owner": "Howie Cadell", "type": "Guinea pig", "breed": "American guinea pig", "description": "Oddball was the runt of his litter and has some breathing problems but is thriving well.", "reason": "Oddball has a hard lump on right front foot", "filename": "keyboard"},
+    { "project": "Chyna", "owner": "Sandie Gobnet", "type": "Turtle", "breed": "Terrapin", "description": "Chyna got her name because she’s a gentle 13-year-old turtle with a tough shell.", "reason": "This turtle is coming in for a checkup and to be tested for Salmonella", "filename": "macbookPro"},
+    { "project": "Wesley", "owner": "Nathan Cayden", "type": "Dog", "breed": "Mixed breed", "description": "At 8 years old there isn’t anything Wesley can’t do, he’s very healthy and full of energy!", "reason": "This dog is returning for his next heartworm treatment visit", "filename": "moreBack"}
+  ],
+
+"projects" :
+  [
+    { "project": "Sami", "owner": "Maggie Rickland", "type": "Dog", "breed": "Dalmation", "description": "Sami is a very happy go lucky 1-year-old Dalmatian that loves to play.", "reason": "Sami has had some changes in his bathroom in habits", "filename": "rubiks"},
+    { "project": "Cosmo", "owner": "Jennifer Dawson", "type": "Bird", "breed": "Parrot", "description": "Cosmo is possibly the happiest parrot that lived, and loves to sing Happy Birthday to anyone that will listen.", "reason": "Cosmo's mom would like us to check for arthritic conditions and do a routine checkup", "filename": "aerialCode"},
+    { "project": "Tibbs", "owner": "Shad Cayden", "type": "Dog", "breed": "Dachshund", "description": "Tibbs suffers from a spinal condition that can cause immobilization and his owner has to watch his activity levels.", "reason": "Tibbs has had an ongoing rash and cold symptoms and we are going to run allergy tests", "filename": "codeBack"},
+    { "project": "Stich", "owner": "Dennis Nicholback", "type": "Dog", "breed": "English pointer", "description": "Four-year-old Stich was born with a birth defect that required surgery at 6 weeks of age.", "reason": "Stich has been having some stomach issues and is due for his vaccinations", "filename": "jenga"}
+  ],
+  "contact" :
+  [
+    { "name": "Mick", "contact": "codebymick", "domain": "gmail", "qual1": "Bachelor of Info Tech", "qual2": "Bachelor of Business", "description": "always keen to take on another project", "cta": "drop me a line", "filename": "rubiks"}
+  ]
+}

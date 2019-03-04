@@ -36,14 +36,15 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#slideshow"><h1>Wisdom<span class="subhead">Pet Medicine</span></h1></a>
+        <a class="navbar-brand" href="#slideshow"><h1>Agmicom<span class="subhead">Online Profile</span></h1></a>
       </div><!-- navbar-header -->
       <div class="collapse navbar-collapse" id="collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><img class="reload reloadbtn" src="images/icons/icon_reload.svg" alt="Reload Button" /></li>
           <li class="active"><a href="#slideshow">Home</a></li>
-          <li><a href="#adoption">Adoption</a></li>
-          <li><a href="#appointments">Appointments</a></li>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div><!-- navbar collapse -->
     </div><!-- navbar container -->
@@ -53,9 +54,9 @@
       <div class="carousel-inner">
         {{#each slideshow}}
           {{#if @first}}
-            <div class="item active"><img src="images/pets/{{filename}}.jpg" alt="{{pet}} photo"></div>
+            <div class="item active"><img src="images/inspiration/{{filename}}.jpg" alt="{{project}} photo"></div>
           {{else}}
-            <div class="item"><img src="images/pets/{{filename}}.jpg" alt="{{pet}} photo"></div>
+            <div class="item"><img src="images/inspiration/{{filename}}.jpg" alt="{{project}} photo"></div>
           {{/if}}
         {{/each}}
       </div><!--carousel inner -->
@@ -66,42 +67,62 @@
   <div id="slideshow-content"></div>
 </header>
 <main>
-  <div class="page" id="adoption">
+  <div class="page" id="dashboard">
     <div class="container">
-      <h2 class="page-headline">Adoptions</h2>
+      <h2 class="page-headline">Dashboard</h2>
       <p>These loving and deserving pets need a home. Please help us find a place for them. Click on their photo for more information.</p>
-      <script id="adoption-template" type="text/x-handlebars-template">
-        {{#each adoption}}
-          <div class="col-md-2 col-sm-3 col-xs-4 openpetmodal" data-toggle="modal" data-target="#wisdompetmodal" data-petname="{{pet}}" data-petbreed="{{breed}}" data-petowner="{{owner}}" data-petinfo="{{description}}" data-petimage="{{filename}}">
-            <img class="img-circle" src="images/pets/{{filename}}_tn.jpg" alt="{{pet}} photo"/>
+      <script id="dashboard-template" type="text/x-handlebars-template">
+        {{#each dashboard}}
+          <div class="col-md-2 col-sm-3 col-xs-4 openpetmodal" data-toggle="modal" data-target="#wisdompetmodal" data-petname="{{project}}" data-petbreed="{{breed}}" data-petowner="{{owner}}" data-petinfo="{{description}}" data-petimage="{{filename}}">
+            <img class="img-circle" src="images/inspiration/{{filename}}_tn.jpg" alt="{{project}} photo"/>
           </div><!-- column -->
         {{/each}}
       </script>
-      <div id="adoption-content"></div>
+      <div id="dashboard-content"></div>
     </div><!-- container -->
-  </div><!-- page-adoption -->
-  <div class="page" id="appointments">
+  </div><!-- page-dashboard -->
+  <div class="page" id="projects">
     <div class="container">
-      <h2 class="page-headline">Appointments</h2>
+      <h2 class="page-headline">Projects</h2>
       <p>Here's the pets that came in this week for an appointment. Click on a pet's photo for more info.</p>
 
-      <script id="appointments-template" type="text/x-handlebars-template">
-        {{#each appointments}}
-          <div class="appointment media openpetmodal" data-toggle="modal" data-target="#wisdompetmodal" data-petname="{{pet}}" data-petbreed="{{breed}}" data-petowner="{{owner}}" data-petinfo="{{reason}}" data-petimage="{{filename}}">
-            <div class="media-left media-top">
-              <img class="media-object appointment-img img-rounded" src="images/pets/{{filename}}_tn.jpg" alt="{{pet}} photo">
-            </div><!-- media-left media-top -->
-            <div class="media-body">
-              <h3 class="media-heading appointments-heading">{{pet}}, <span class="appointment-breed">{{breed}}</span></h3>
-              <div class="appointment-owner"><span class="appointment-owner-title">Owner: </span> <span class="appointment-owner-name">{{owner}}</span></div>
-              <div class="appointment-reason">{{reason}}</div>
-            </div><!-- media-body -->
-          </div><!-- appointment media openpetmodal -->
+      <script id="projects-template" type="text/x-handlebars-template">
+        {{#each projects}}
+        <div class="appointment media openpetmodal" data-toggle="modal" data-target="#wisdompetmodal" data-petname="{{project}}" data-petbreed="{{breed}}" data-petowner="{{owner}}" data-petinfo="{{reason}}" data-petimage="{{filename}}">
+          <div class="media-left media-top">
+            <img class="media-object appointment-img img-rounded" src="images/inspiration/{{filename}}_tn.jpg" alt="{{project}} photo">
+          </div><!-- media-left media-top -->
+          <div class="media-body">
+            <h3 class="media-heading projects-heading">{{project}}, <span class="appointment-breed">{{breed}}</span></h3>
+            <div class="appointment-owner"><span class="appointment-owner-title">Owner: </span> <span class="appointment-owner-name">{{owner}}</span></div>
+            <div class="appointment-reason">{{reason}}</div>
+          </div><!-- media-body -->
+        </div><!-- appointment media openpetmodal -->
         {{/each}}
       </script>
-      <div id="appointments-content"></div>
+      <div id="projects-content"></div>
     </div><!-- container -->
-  </div><!-- page-appointments -->
+  </div><!-- page-projects -->
+  <div class="page" id="contact">
+    <div class="container">
+      <h2 class="page-headline">Contact</h2>
+      <script id="contact-template" type="text/x-handlebars-template">
+        {{#each contact}}
+        <div class="appointment media openpetmodal" data-toggle="modal" data-target="#wisdompetmodal" data-petname="{{name}}" data-petbreed="{{contact}}" data-petowner="{{domain}}" data-petinfo1="{{qual1}}" data-petinfo2="{{qual2}}" data-petimage="{{filename}}">
+          <div class="media-left media-top">
+            <img class="media-object appointment-img img-rounded" src="images/inspiration/{{filename}}_tn.jpg" alt="{{name}} photo">
+          </div><!-- media-left media-top -->
+          <div class="media-body">
+            <h3 class="media-heading projects-heading">{{name}}<p class="appointment-breed"></p></h3>
+            <div class="appointment-owner"><p class="appointment-owner-title">{{contact}}@{{domain}}.com</p> <p class="appointment-owner-name">{{qual1}}</p><p class="appointment-owner-name">{{qual2}}</p></div>
+            <div class="appointment-reason">{{reason}}</div>
+          </div><!-- media-body -->
+        </div><!-- appointment media openpetmodal -->
+        {{/each}}
+      </script>
+      <div id="contact-content"></div>
+    </div><!-- container -->
+  </div><!-- page-contact -->
 </main>
 
 <div class="modal fade" id="wisdompetmodal" tabindex="-1" role="dialog" aria-labelledby="petModal">

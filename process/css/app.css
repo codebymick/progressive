@@ -192,79 +192,79 @@ header .inbody .navbar-brand span.subhead {
   margin-bottom: 20px;
 }
 
-#adoption .col-xs-1, #adoption .col-sm-1, #adoption .col-md-1, #adoption .col-lg-1, #adoption .col-xs-2, #adoption .col-sm-2, #adoption .col-md-2, #adoption .col-lg-2, #adoption .col-xs-3, #adoption .col-sm-3, #adoption .col-md-3, #adoption .col-lg-3, #adoption .col-xs-4, #adoption .col-sm-4, #adoption .col-md-4, #adoption .col-lg-4, #adoption .col-xs-5, #adoption .col-sm-5, #adoption .col-md-5, #adoption .col-lg-5, #adoption .col-xs-6, #adoption .col-sm-6, #adoption .col-md-6, #adoption .col-lg-6, #adoption .col-xs-7, #adoption .col-sm-7, #adoption .col-md-7, #adoption .col-lg-7, #adoption .col-xs-8, #adoption .col-sm-8, #adoption .col-md-8, #adoption .col-lg-8, #adoption .col-xs-9, #adoption .col-sm-9, #adoption .col-md-9, #adoption .col-lg-9, #adoption .col-xs-10, #adoption .col-sm-10, #adoption .col-md-10, #adoption .col-lg-10, #adoption .col-xs-11, #adoption .col-sm-11, #adoption .col-md-11, #adoption .col-lg-11, #adoption .col-xs-12, #adoption .col-sm-12, #adoption .col-md-12, #adoption .col-lg-12 {
+#dashboard .col-xs-1, #dashboard .col-sm-1, #dashboard .col-md-1, #dashboard .col-lg-1, #dashboard .col-xs-2, #dashboard .col-sm-2, #dashboard .col-md-2, #dashboard .col-lg-2, #dashboard .col-xs-3, #dashboard .col-sm-3, #dashboard .col-md-3, #dashboard .col-lg-3, #dashboard .col-xs-4, #dashboard .col-sm-4, #dashboard .col-md-4, #dashboard .col-lg-4, #dashboard .col-xs-5, #dashboard .col-sm-5, #dashboard .col-md-5, #dashboard .col-lg-5, #dashboard .col-xs-6, #dashboard .col-sm-6, #dashboard .col-md-6, #dashboard .col-lg-6, #dashboard .col-xs-7, #dashboard .col-sm-7, #dashboard .col-md-7, #dashboard .col-lg-7, #dashboard .col-xs-8, #dashboard .col-sm-8, #dashboard .col-md-8, #dashboard .col-lg-8, #dashboard .col-xs-9, #dashboard .col-sm-9, #dashboard .col-md-9, #dashboard .col-lg-9, #dashboard .col-xs-10, #dashboard .col-sm-10, #dashboard .col-md-10, #dashboard .col-lg-10, #dashboard .col-xs-11, #dashboard .col-sm-11, #dashboard .col-md-11, #dashboard .col-lg-11, #dashboard .col-xs-12, #dashboard .col-sm-12, #dashboard .col-md-12, #dashboard .col-lg-12 {
     padding-right: 5px;
     padding-left: 5px;
 }
 
-#adoption {
+#dashboard {
   background-color: #8AC8E1;
 }
 
-#adoption .page-headline {
+#dashboard .page-headline {
   color: hsl(202, 45%, 37%);
 }
 
-#adoption img {
+#dashboard img {
   width: 100%;
   margin-bottom: 10px;
   cursor: pointer;
 }
 
-#appointments {
+#projects {
   line-height:100%;
   background: hsl(38, 24%, 87%);
 }
 
-#appointments .page-headline {
+#projects .page-headline {
   color: hsl(10, 79%, 38%);
 }
 
-#appointments .appointment {
+#projects .appointment {
   border-bottom: 1px solid hsl(38, 24%, 67%);
   cursor: pointer;
   margin-top: 0;
   padding: 15px 0 15px 15px;
 }
 
-#appointments .appointment:hover {
+#projects .appointment:hover {
   background: hsl(38, 24%, 77%);
 }
 
-#appointments .appointment-img {
+#projects .appointment-img {
   width: 100px;
 }
 
-#appointments .appointment-heading {
+#projects .appointment-heading {
   font-size: 1.6em;
   color: hsl(10, 79%, 28%);
 }
 
-#appointments .appointment-breed {
+#projects .appointment-breed {
   color: hsla(10, 100%, 28%,.7);
   font-size: .6em;
   font-weight: 600;
 }
 
-#appointments .appointment-owner-title {
+#projects .appointment-owner-title {
   font-weight: 600;
   color: rgba(0,0,0,.6);
 }
 
-#appointments .appointment-owner-name {
+#projects .appointment-owner-name {
   font-weight: 300;
   color: rgba(0,0,0,.5);
   font-size: .95em;
   font-style: italic;
 }
 
-#appointments .appointment-reason {
+#projects .appointment-reason {
   margin-top: 5px;
   font-size: .85em;
   font-style: italic;
 }
 
-#appointments .col-xs-1, #appointments .col-sm-1, #appointments .col-md-1, #appointments .col-lg-1, #appointments .col-xs-2, #appointments .col-sm-2, #appointments .col-md-2, #appointments .col-lg-2, #appointments .col-xs-3, #appointments .col-sm-3, #appointments .col-md-3, #appointments .col-lg-3, #appointments .col-xs-4, #appointments .col-sm-4, #appointments .col-md-4, #appointments .col-lg-4, #appointments .col-xs-5, #appointments .col-sm-5, #appointments .col-md-5, #appointments .col-lg-5, #appointments .col-xs-6, #appointments .col-sm-6, #appointments .col-md-6, #appointments .col-lg-6, #appointments .col-xs-7, #appointments .col-sm-7, #appointments .col-md-7, #appointments .col-lg-7, #appointments .col-xs-8, #appointments .col-sm-8, #appointments .col-md-8, #appointments .col-lg-8, #appointments .col-xs-9, #appointments .col-sm-9, #appointments .col-md-9, #appointments .col-lg-9, #appointments .col-xs-10, #appointments .col-sm-10, #appointments .col-md-10, #appointments .col-lg-10, #appointments .col-xs-11, #appointments .col-sm-11, #appointments .col-md-11, #appointments .col-lg-11, #appointments .col-xs-12, #appointments .col-sm-12, #appointments .col-md-12, #appointments .col-lg-12 {
+#projects .col-xs-1, #projects .col-sm-1, #projects .col-md-1, #projects .col-lg-1, #projects .col-xs-2, #projects .col-sm-2, #projects .col-md-2, #projects .col-lg-2, #projects .col-xs-3, #projects .col-sm-3, #projects .col-md-3, #projects .col-lg-3, #projects .col-xs-4, #projects .col-sm-4, #projects .col-md-4, #projects .col-lg-4, #projects .col-xs-5, #projects .col-sm-5, #projects .col-md-5, #projects .col-lg-5, #projects .col-xs-6, #projects .col-sm-6, #projects .col-md-6, #projects .col-lg-6, #projects .col-xs-7, #projects .col-sm-7, #projects .col-md-7, #projects .col-lg-7, #projects .col-xs-8, #projects .col-sm-8, #projects .col-md-8, #projects .col-lg-8, #projects .col-xs-9, #projects .col-sm-9, #projects .col-md-9, #projects .col-lg-9, #projects .col-xs-10, #projects .col-sm-10, #projects .col-md-10, #projects .col-lg-10, #projects .col-xs-11, #projects .col-sm-11, #projects .col-md-11, #projects .col-lg-11, #projects .col-xs-12, #projects .col-sm-12, #projects .col-md-12, #projects .col-lg-12 {
     padding-right: 5px;
     padding-left: 5px;
 }
