@@ -56,9 +56,10 @@ header .navbar-default .navbar-nav .active a:hover {
 /**  Navbar Brand **/
 
 header .navbar-brand {
-  background: url(../images/wisdompetlogo.svg);
+  background: url(../images/logo1.png);
   background-repeat: no-repeat;
   background-position: 15px 0;
+  background-size: 28%;
   height: auto;
 }
 
@@ -108,7 +109,7 @@ header .navbar.inbody .navbar-nav {
 }
 
 header .inbody .navbar-brand {
-  background-size: 43px;
+  background-size: 36px;
   background-position: top left;
   margin-top: 5px;
   padding-bottom: 0;

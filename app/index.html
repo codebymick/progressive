@@ -1,147 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Progressive Web Apps</title>
-  <link rel="stylesheet" href="/css/app.css">
-  <link rel="manifest" href="/manifest.json">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Progressive Web Apps</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="manifest" href="/manifest.json">
 
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  <meta name="apple-mobile-web-app-title" content="Wisdom Pet">
-  <meta name="apple-touch-icon" content="images/icons/icon-152x152.png">
+    <meta name="apple-mobile-web-app-title" content="Wisdom Pet">
+    <meta name="apple-touch-icon" content="images/icons/icon-152x152.png">
 
-  <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
-  <meta name="msapplication-TileColor" content="#2F3BA2">
+    <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
 
 </head>
 <body>
 <div class="loader">
-  <div class="loader-text">Loading...</div>
-  <div class="progress">
-      <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" style="width: 100%"></div>
-  </div>
+    <div class="loader-text">Loading...</div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+             style="width: 100%"></div>
+    </div>
 </div>
 <header>
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <img class="reload reloadbtn-lg" src="images/icons/icon_reload.svg" alt="Reload Button" />
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#slideshow"><h1>Agmicom<span class="subhead">Online Profile</span></h1></a>
-      </div><!-- navbar-header -->
-      <div class="collapse navbar-collapse" id="collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><img class="reload reloadbtn" src="images/icons/icon_reload.svg" alt="Reload Button" /></li>
-          <li class="active"><a href="#slideshow">Home</a></li>
-          <li><a href="#dashboard">Dashboard</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div><!-- navbar collapse -->
-    </div><!-- navbar container -->
-  </nav><!-- nav -->
-  <script id="slideshow-template" type="text/x-handlebars-template">
-    <div class="carousel fade" data-ride="carousel" id="slideshow">
-      <div class="carousel-inner">
-        {{#each slideshow}}
-          {{#if @first}}
-            <div class="item active"><img src="images/inspiration/{{filename}}.jpg" alt="{{project}} photo"></div>
-          {{else}}
-            <div class="item"><img src="images/inspiration/{{filename}}.jpg" alt="{{project}} photo"></div>
-          {{/if}}
-        {{/each}}
-      </div><!--carousel inner -->
-      <a class="left carousel-control" href="#slideshow" role="button" data-slide="prev"></a>
-      <a class="right carousel-control" href="#slideshow" role="button" data-slide="next"></a>
-    </div><!--carousel fade -->
-  </script>
-  <div id="slideshow-content"></div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <img class="reload reloadbtn-lg" src="images/icons/icon_reload.svg" alt="Reload Button"/>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#slideshow"><h1>Mick White<span class="subhead">Frontend Developer</span>
+                </h1></a>
+            </div><!-- navbar-header -->
+            <div class="collapse navbar-collapse" id="collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><img class="reload reloadbtn" src="images/icons/icon_reload.svg" alt="Reload Button"/></li>
+                    <li class="active"><a href="#slideshow">Home</a></li>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div><!-- navbar collapse -->
+        </div><!-- navbar container -->
+    </nav><!-- nav -->
+    <script id="slideshow-template" type="text/x-handlebars-template">
+        <div class="carousel fade" data-ride="carousel" id="slideshow">
+            <div class="carousel-inner">
+                {{#each slideshow}}
+                {{#if @first}}
+                <div class="item active"><img src="images/inspiration/{{filename}}.jpg" alt="{{project}} photo"></div>
+                {{else}}
+                <div class="item"><img src="images/inspiration/{{filename}}.jpg" alt="{{project}} photo"></div>
+                {{/if}}
+                {{/each}}
+            </div><!--carousel inner -->
+            <a class="left carousel-control" href="#slideshow" role="button" data-slide="prev"></a>
+            <a class="right carousel-control" href="#slideshow" role="button" data-slide="next"></a>
+        </div><!--carousel fade -->
+    </script>
+    <div id="slideshow-content"></div>
 </header>
 <main>
-  <div class="page" id="dashboard">
-    <div class="container">
-      <h2 class="page-headline">Dashboard</h2>
-      <p>These loving and deserving pets need a home. Please help us find a place for them. Click on their photo for more information.</p>
-      <script id="dashboard-template" type="text/x-handlebars-template">
-        {{#each dashboard}}
-          <div class="col-md-2 col-sm-3 col-xs-4 openprojectmodal" data-toggle="modal" data-target="#wisdompetmodal" data-petname="{{project}}" data-petbreed="{{breed}}" data-petowner="{{owner}}" data-petinfo="{{description}}" data-petimage="{{filename}}">
-            <img class="img-circle" src="images/inspiration/{{filename}}_tn.jpg" alt="{{project}} photo"/>
-          </div><!-- column -->
-        {{/each}}
-      </script>
-      <div id="dashboard-content"></div>
-    </div><!-- container -->
-  </div><!-- page-dashboard -->
-  <div class="page" id="projects">
-    <div class="container">
-      <h2 class="page-headline">Projects</h2>
-      <p>Here's the pets that came in this week for an appointment. Click on a pet's photo for more info.</p>
+    <div class="page" id="dashboard">
+        <div class="container">
+            <h2 class="page-headline">Dashboard</h2>
+            <p>These loving and deserving pets need a home. Please help us find a place for them. Click on their photo
+                for more information.</p>
+            <script id="dashboard-template" type="text/x-handlebars-template">
+                {{#each dashboard}}
+                <div class="col-md-2 col-sm-3 col-xs-4 openprojectmodal" data-toggle="modal"
+                     data-target="#wisdompetmodal" data-petname="{{project}}" data-petbreed="{{breed}}"
+                     data-petowner="{{owner}}" data-petinfo="{{description}}" data-petimage="{{filename}}">
+                    <img class="img-circle" src="images/inspiration/{{filename}}_tn.jpg" alt="{{project}} photo"/>
+                </div><!-- column -->
+                {{/each}}
+            </script>
+            <div id="dashboard-content"></div>
+        </div><!-- container -->
+    </div><!-- page-dashboard -->
+    <div class="page" id="projects">
+        <div class="container">
+            <h2 class="page-headline">Projects</h2>
+            <p>Here's the pets that came in this week for an appointment. Click on a pet's photo for more info.</p>
 
-      <script id="projects-template" type="text/x-handlebars-template">
-        {{#each projects}}
-        <div class="appointment media openprojectmodal" data-toggle="modal" data-target="#wisdompetmodal" data-petname="{{project}}" data-petbreed="{{breed}}" data-petowner="{{owner}}" data-petinfo="{{reason}}" data-petimage="{{filename}}">
-          <div class="media-left media-top">
-            <img class="media-object appointment-img img-rounded" src="images/inspiration/{{filename}}_tn.jpg" alt="{{project}} photo">
-          </div><!-- media-left media-top -->
-          <div class="media-body">
-            <h3 class="media-heading projects-heading">{{project}}, <span class="appointment-breed">{{breed}}</span></h3>
-            <div class="appointment-owner"><span class="appointment-owner-title">Owner: </span> <span class="appointment-owner-name">{{owner}}</span></div>
-            <div class="appointment-reason">{{reason}}</div>
-          </div><!-- media-body -->
-        </div><!-- appointment media openprojectmodal -->
-        {{/each}}
-      </script>
-      <div id="projects-content"></div>
-    </div><!-- container -->
-  </div><!-- page-projects -->
-  <div class="page" id="contact">
-    <div class="container">
-      <h2 class="page-headline">Contact</h2>
-      <script id="contact-template" type="text/x-handlebars-template">
-        {{#each contact}}
-        <div class="appointment media openprojectmodal" data-toggle="modal" data-target="#wisdompetmodal" data-petname="{{name}}" data-petbreed="{{job}}" data-petowner="{{domain}}" data-petinfo1="{{qual1}}" data-petinfo2="{{qual2}}" data-petimage="{{filename}}">
-          <div class="media-left media-top">
-            <img class="media-object appointment-img img-rounded" src="images/inspiration/{{filename}}.jpg" alt="{{name}} photo">
-          </div><!-- media-left media-top -->
-          <div class="media-body">
-            <h3 class="media-heading projects-heading">{{name}}<p class="appointment-breed">{{job}}</p></h3>
-            <div class="appointment-owner"> <p class="appointment-owner-name">{{qual1}}</p><p class="appointment-owner-name">{{qual2}}</p></div>
-            <div class="appointment-reason">{{description}}</div>
-            <div class="appointment-reason">{{cta}}
-              <p class="appointment-owner-title">{{contact}}@{{domain}}.com</p></div>
+            <script id="projects-template" type="text/x-handlebars-template">
+                {{#each projects}}
+                <div class="appointment media openprojectmodal" data-toggle="modal" data-target="#wisdompetmodal"
+                     data-petname="{{project}}" data-petbreed="{{breed}}" data-petowner="{{owner}}"
+                     data-petinfo="{{reason}}" data-petimage="{{filename}}">
+                    <div class="media-left media-top">
+                        <img class="media-object appointment-img img-rounded"
+                             src="images/inspiration/{{filename}}_tn.jpg" alt="{{project}} photo">
+                    </div><!-- media-left media-top -->
+                    <div class="media-body">
+                        <h3 class="media-heading projects-heading">{{project}}, <span class="appointment-breed">{{breed}}</span>
+                        </h3>
+                        <div class="appointment-owner"><span class="appointment-owner-title">Owner: </span> <span
+                                class="appointment-owner-name">{{owner}}</span></div>
+                        <div class="appointment-reason">{{reason}}</div>
+                    </div><!-- media-body -->
+                </div><!-- appointment media openprojectmodal -->
+                {{/each}}
+            </script>
+            <div id="projects-content"></div>
+        </div><!-- container -->
+    </div><!-- page-projects -->
+    <div class="page" id="contact">
+        <div class="container">
+            <h2 class="page-headline">Contact</h2>
+            <script id="contact-template" type="text/x-handlebars-template">
+                {{#each contact}}
+                <div class="appointment media openprojectmodal" data-toggle="modal" data-target="#wisdompetmodal"
+                     data-petname="{{name}}" data-petbreed="{{job}}" data-petowner="{{domain}}"
+                     data-petinfo1="{{qual1}}" data-petinfo2="{{qual2}}" data-petinfo3="{{qual3}}"
+                     data-petimage="{{filename}}">
+                    <div class="media-left media-top">
+                        <img class="media-object appointment-img img-rounded" src="images/inspiration/{{filename}}.jpg"
+                             alt="{{name}} photo">
+                    </div><!-- media-left media-top -->
+                    <div class="media-body">
+                        <h3 class="media-heading projects-heading">{{name}}<p class="appointment-breed">{{job}}</p></h3>
+                        <div class="appointment-owner">
+                            <p class="appointment-owner-name">{{qual1}}</p>
+                            <p class="appointment-owner-name">{{qual2}}</p>
+                            <p class="appointment-owner-name">{{qual3}}</p>
+                            <p class="appointment-reason">{{description}}</p>
+                            <br>
+                            <p><span class="appointment-reason">{{cta}}:</span>
+                                <span class="appointment-owner-title">{{contact}}@{{domain}}.com</span></p>
+                        </div>
 
-          </div><!-- media-body -->
-        </div><!-- appointment media openprojectmodal -->
-        {{/each}}
-      </script>
-      <div id="contact-content"></div>
-    </div><!-- container -->
-  </div><!-- page-contact -->
+
+
+                    </div><!-- media-body -->
+                </div><!-- appointment media openprojectmodal -->
+                {{/each}}
+            </script>
+            <div id="contact-content"></div>
+        </div><!-- container -->
+    </div><!-- page-contact -->
 </main>
 
 <div class="modal fade" id="wisdompetmodal" tabindex="-1" role="dialog" aria-labelledby="petModal">
-  <div class="modal-dialog" data-dismiss="modal" aria-label="Close" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" arial-label="Close" role="document"><span aria-hidden="true">&times;</span></button>
-        <h2 class="modal-title modal-petname"></h2>
-        <div class="modal-petbreed"></div>
-      </div><!-- modal header -->
-      <div class="modal-body">
-        <img class="img-responsive modal-petimage" />
-        <p class="modal-petinfo"></p>
-      </div><!--modal-body-->
-    </div><!-- modal content -->
-  </div><!-- modal dialog -->
+    <div class="modal-dialog" data-dismiss="modal" aria-label="Close" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" arial-label="Close" role="document"><span
+                        aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title modal-petname"></h2>
+                <div class="modal-petbreed"></div>
+            </div><!-- modal header -->
+            <div class="modal-body">
+                <img class="img-responsive modal-petimage"/>
+                <p class="modal-petinfo"></p>
+            </div><!--modal-body-->
+        </div><!-- modal content -->
+    </div><!-- modal dialog -->
 </div><!-- modal fade -->
 
 <script src="js/app.js"></script>

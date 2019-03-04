@@ -12,8 +12,8 @@ var gulp       = require('gulp'),
 
 var src         = './process',
     dest        = './app',
-    // environment = 'production';
-    environment = 'development';
+    // environment = 'production || development';
+    environment = 'production';
 
 gulp.task('generate-service-worker', function (callback) {
   swPrecache.write(path.join(dest, 'service-worker.js'), {
