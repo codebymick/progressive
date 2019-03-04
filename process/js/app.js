@@ -58,7 +58,7 @@ $(function() {
     }
   });
 
-  $(document).on('click', '.openpetmodal', function() {
+  $(document).on('click', '.openprojectmodal', function() {
     $('.modal-petname').html($(this).data('petname'));
     $('.modal-petbreed').html($(this).data('petbreed'));
     $('.modal-petowner').html($(this).data('petowner'));
