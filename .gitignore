@@ -6,3 +6,5 @@ app/js/app.js
 builds/development/images/**
 .idea
 *.svg
+*.jpg
+images/
