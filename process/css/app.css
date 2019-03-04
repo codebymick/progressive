@@ -78,7 +78,7 @@ header .navbar-brand span.subhead {
 
 /**  Navbar Toggle **/
 header .navbar-toggle {
-  background-color: #417D9A;
+  background-color: darkorange;
 }
 
 header .navbar-default .navbar-toggle .icon-bar {
@@ -198,11 +198,14 @@ header .inbody .navbar-brand span.subhead {
 }
 
 #dashboard {
-  background-color: #8AC8E1;
+  background-color: #000000;
 }
 
 #dashboard .page-headline {
-  color: hsl(202, 45%, 37%);
+  color: darkorange;
+}
+#dashboard  p{
+color: coral;
 }
 
 #dashboard img {

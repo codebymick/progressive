@@ -30,6 +30,6 @@
   ],
   "contact" :
   [
-    { "name": "Mick", "contact": "codebymick", "domain": "gmail", "qual1": "Bachelor of Info Tech", "qual2": "Bachelor of Business", "description": "always keen to take on another project", "cta": "drop me a line", "filename": "rubiks"}
+    { "name": "Mick White", "job": "frontend developer", "contact": "codebymick", "domain": "gmail", "qual1": "Bachelor of Info Tech", "qual2": "Bachelor of Business", "description": "always keen to take on another project", "cta": "drop me a line", "filename": "headshot"}
   ]
 }

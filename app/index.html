@@ -108,14 +108,17 @@
       <h2 class="page-headline">Contact</h2>
       <script id="contact-template" type="text/x-handlebars-template">
         {{#each contact}}
-        <div class="appointment media openpetmodal" data-toggle="modal" data-target="#wisdompetmodal" data-petname="{{name}}" data-petbreed="{{contact}}" data-petowner="{{domain}}" data-petinfo1="{{qual1}}" data-petinfo2="{{qual2}}" data-petimage="{{filename}}">
+        <div class="appointment media openpetmodal" data-toggle="modal" data-target="#wisdompetmodal" data-petname="{{name}}" data-petbreed="{{job}}" data-petowner="{{domain}}" data-petinfo1="{{qual1}}" data-petinfo2="{{qual2}}" data-petimage="{{filename}}">
           <div class="media-left media-top">
             <img class="media-object appointment-img img-rounded" src="images/inspiration/{{filename}}_tn.jpg" alt="{{name}} photo">
           </div><!-- media-left media-top -->
           <div class="media-body">
-            <h3 class="media-heading projects-heading">{{name}}<p class="appointment-breed"></p></h3>
-            <div class="appointment-owner"><p class="appointment-owner-title">{{contact}}@{{domain}}.com</p> <p class="appointment-owner-name">{{qual1}}</p><p class="appointment-owner-name">{{qual2}}</p></div>
-            <div class="appointment-reason">{{reason}}</div>
+            <h3 class="media-heading projects-heading">{{name}}<p class="appointment-breed">{{job}}</p></h3>
+            <div class="appointment-owner"> <p class="appointment-owner-name">{{qual1}}</p><p class="appointment-owner-name">{{qual2}}</p></div>
+            <div class="appointment-reason">{{description}}</div>
+            <div class="appointment-reason">{{cta}}
+              <p class="appointment-owner-title">{{contact}}@{{domain}}.com</p></div>
+
           </div><!-- media-body -->
         </div><!-- appointment media openpetmodal -->
         {{/each}}
