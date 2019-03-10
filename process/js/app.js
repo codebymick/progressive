@@ -59,12 +59,15 @@ $(function() {
   });
 
   $(document).on('click', '.openprojectmodal', function() {
-    $('.modal-petname').html($(this).data('petname'));
-    $('.modal-petbreed').html($(this).data('petbreed'));
+    $('.modal-name').html($(this).data('name'));
+    $('.modal-type').html($(this).data('type'));
     $('.modal-petowner').html($(this).data('petowner'));
-    $('.modal-petinfo').html($(this).data('petinfo'));
-    $('.modal-petimage').attr('src', 'images/inspiration/' + $(this).data('petimage')+ '.jpg');
-    $('.modal-petimage').attr('alt', $(this).data('petname')+ ' photo');
+    $('.modal-info').html($(this).data('info'));
+    $('.modal-brief').html($(this).data('brief'));
+    $('.modal-outcome').html($(this).data('outcome'));
+    $('.modal-link').attr('href', $(this).data('link'));
+    $('.modal-image').attr('src', 'images/inspiration/' + $(this).data('image')+ '.jpg');
+    $('.modal-image').attr('alt', $(this).data('name')+ ' photo');
   });
 
   //Use smooth scrolling when clicking on navigation

@@ -13,10 +13,14 @@
   "devDependencies": {
     "browserify": "^13.1.0",
     "gulp": "^3.8.8",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-browserify": "^0.5.1",
     "gulp-clean-css": "^2.0.13",
     "gulp-concat-css": "^2.3.0",
     "gulp-if": "^2.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.2.0",
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^2.2.20",
@@ -25,6 +29,7 @@
     "sw-precache": "^4.2.1"
   },
   "dependencies": {
-    "handlebars": "^4.0.5"
+    "handlebars": "^4.0.5",
+    "sass": "^1.17.2"
   }
 }

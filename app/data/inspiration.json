@@ -1,35 +1,111 @@
 {
-  "slideshow":
-    [
-      { "project": "Casper", "owner": "", "type": "", "breed": "", "description": "", "reason": "", "filename": "sourceCode"},
-      { "project": "Chip", "owner": "", "type": "", "breed": "", "description": "", "reason": "", "filename": "jenga"},
-      { "project": "Nugget", "owner": "", "type": "", "breed": "", "description": "", "reason": "", "filename": "aerialCode"},
-      { "project": "Casper", "owner": " ", "type": "", "breed": "", "description": "", "reason": "", "filename": "keyboard"},
-      { "project": "Chip", "owner": " ", "type": "", "breed": "", "description": "", "reason": "", "filename": "macbookPro"},
-      { "project": "Nugget", "owner": " ", "type": "", "breed": "", "description": "", "reason": "", "filename": "moreBack"},
-      { "project": "Casper", "owner": " ", "type": "", "breed": "", "description": "", "reason": "", "filename": "codeBack"},
-      { "project": "Chip", "owner": " ", "type": "", "breed": "", "description": "", "reason": " ", "filename": "rubiks"}
+  "slideshow": [
+    {
+      "filename": "sourceCode"
+    },
+    {
+      "filename": "jenga"
+    },
+    {
+      "filename": "aerialCode"
+    },
+    {
+      "filename": "keyboard"
+    },
+    {
+      "filename": "macbookPro"
+    },
+    {
+      "filename": "moreBack"
+    },
+    {
+      "filename": "codeBack"
+    },
+    {
+      "filename": "rubiks"
+    }
   ],
-
-"dashboard":
-  [
-    { "project": "Pepe", "owner": "Reggie Tupp", "type": "Rabbit", "breed": "Cinnamon rabbit", "description": "Six-month-old Pepe is very active and is always keeping his owners, and us, on our toes!", "reason": "It's time for this rabbit's post spaying surgery checkup", "filename": "sourceCode"},
-    { "project": "Nadalee", "owner": "Krystle Valerija", "type": "Dog", "breed": "Chihuahua", "description": "Nadalee is a 7-year-old long hair Chihuahua with a very pleasant, laid back, temperament.", "reason": "This dog is coming in for his monthly nail trim and grooming", "filename": "jenga"},
-    { "project": "Zera", "owner": "Austin Finnagan", "type": "Iguana", "breed": "Cayman brac iguana", "description": "This iguana is on the endangered species list, and is thriving well in her owner’s home.", "reason": "This iguana's is showing signs of dementia associated with his old age", "filename": "aerialCode"},
-    { "project": "Oddball", "owner": "Howie Cadell", "type": "Guinea pig", "breed": "American guinea pig", "description": "Oddball was the runt of his litter and has some breathing problems but is thriving well.", "reason": "Oddball has a hard lump on right front foot", "filename": "keyboard"},
-    { "project": "Chyna", "owner": "Sandie Gobnet", "type": "Turtle", "breed": "Terrapin", "description": "Chyna got her name because she’s a gentle 13-year-old turtle with a tough shell.", "reason": "This turtle is coming in for a checkup and to be tested for Salmonella", "filename": "macbookPro"},
-    { "project": "Wesley", "owner": "Nathan Cayden", "type": "Dog", "breed": "Mixed breed", "description": "At 8 years old there isn’t anything Wesley can’t do, he’s very healthy and full of energy!", "reason": "This dog is returning for his next heartworm treatment visit", "filename": "moreBack"}
+  "dashboard": [
+    {
+      "name": "GIT",
+      "description": "Daily GIT contribs for the past 12 months.  Sourced from GITHUB and GITLAB accounts",
+      "filename": "sourceCode"
+    },
+    {
+      "name": "Today",
+      "description": "Summary of code usage for the most recent working day, sourced from activitywatch and wakatime data.",
+      "filename": "jenga"
+    },
+    {
+      "name": "Last 12 months",
+      "description": "Summary of code usage for the past 12 months by code type, sourced from activitywatch and wakatime data.",
+      "filename": "aerialCode"
+    }
   ],
-
-"projects" :
-  [
-    { "project": "Sami", "owner": "Maggie Rickland", "type": "Dog", "breed": "Dalmation", "description": "Sami is a very happy go lucky 1-year-old Dalmatian that loves to play.", "reason": "Sami has had some changes in his bathroom in habits", "filename": "rubiks"},
-    { "project": "Cosmo", "owner": "Jennifer Dawson", "type": "Bird", "breed": "Parrot", "description": "Cosmo is possibly the happiest parrot that lived, and loves to sing Happy Birthday to anyone that will listen.", "reason": "Cosmo's mom would like us to check for arthritic conditions and do a routine checkup", "filename": "aerialCode"},
-    { "project": "Tibbs", "owner": "Shad Cayden", "type": "Dog", "breed": "Dachshund", "description": "Tibbs suffers from a spinal condition that can cause immobilization and his owner has to watch his activity levels.", "reason": "Tibbs has had an ongoing rash and cold symptoms and we are going to run allergy tests", "filename": "codeBack"},
-    { "project": "Stich", "owner": "Dennis Nicholback", "type": "Dog", "breed": "English pointer", "description": "Four-year-old Stich was born with a birth defect that required surgery at 6 weeks of age.", "reason": "Stich has been having some stomach issues and is due for his vaccinations", "filename": "jenga"}
+  "projects": [
+    {
+      "project": "R3fresh",
+      "type": "Chrome browser extension",
+      "code": "HTML, css, javascript",
+      "brief": "to allow auto reloading of chrome browser when working in local dev environment.",
+      "outcome": "chrome browser extension monitors local html, css and js files and reloads browser on detected changes",
+      "filename": "r3fresh",
+      "link": "https://github.com/codebymick"
+    },
+    {
+      "project": "Tansom Studios",
+      "type": "Wordpress Site",
+      "code": "PHP, css, javascript",
+      "brief": "to deliver a collection of video project files with the ability for an admin to update and maintain the site content.  client requested secure backend access with fast page speeds and SEO optimisation.",
+      "outcome": "i built a custom wordpress site to offer all the advantages of the popular CMS with bespoke inclusions to allow for the client layouts.",
+      "filename": "tansom",
+      "link": "https://github.com/codebymick"
+    },
+    {
+      "project": "Innitiativ-Horaserweg",
+      "type": "Wordpress Theme",
+      "code": "PHP, css, javascript",
+      "brief": "Customise homepage to suit client design",
+      "outcome": "Wordpress custom theme built to work with existing database.",
+      "filename": "horaserweg",
+      "link": "https://horaserweg.de/ueber/"
+    },
+    {
+      "project": "Space Invaders",
+      "type": "javascript, HTML, CSS",
+      "brief": "open source project falling back to the classic retro arcade game",
+      "outcome": "i built a HTML page with javascript and css",
+      "filename": "spaceinvaders",
+      "link": ""
+    },{
+      "project": "Parrotfish Lodge",
+      "type": "javascript, HTML, CSS",
+      "brief": "modernise existing business site with secure e-commerce features and updatable content",
+      "outcome": "i built a php site with mySQL backend, implemented google tag manager & twitter api feed",
+      "filename": "pfl",
+      "link": "https://web.archive.org/web/20140214003504/http://www.parrotfishlodge.com/"
+    },
+    {
+      "project": "allnations.com",
+      "type": "javascript, HTML, CSS",
+      "brief": "modernise existing business site",
+      "outcome": "simple HTML and CSS site",
+      "filename": "allnations",
+      "link": "https://web.archive.org/web/20050309051120/http://www.backpackerscentre.com/allnations/"
+    }
   ],
-  "contact" :
-  [
-    { "name": "Mick White", "job": "frontend developer", "contact": "codebymick", "domain": "gmail", "qual1": "Bachelor of Info Tech", "qual2": "Bachelor of Business","qual3": "5 years+ fulltime professional experience", "description": "always keen to take on another project", "cta": "drop me an email...", "filename": "headshot"}
+  "contact": [
+    {
+      "name": "Mick White",
+      "job": "frontend developer",
+      "contact": "codebymick",
+      "domain": "gmail",
+      "qual1": "Bachelor of Info Tech",
+      "qual2": "Bachelor of Business",
+      "qual3": "5 years+ fulltime professional experience",
+      "description": "always keen to take on another project",
+      "cta": "drop me an email...",
+      "filename": "headshot"
+    }
   ]
 }

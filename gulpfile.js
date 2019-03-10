@@ -5,10 +5,15 @@ var gulp       = require('gulp'),
     cleanCSS   = require('gulp-clean-css'),
     uglify     = require('gulp-uglify'),
     sourcemaps = require('gulp-sourcemaps'),
+  plumber      = require('gulp-plumber'),
     gulpif     = require('gulp-if'),
     webserver  = require('gulp-webserver'),
+    rename       = require("gulp-rename"),
     path       = require('path'),
-    swPrecache = require('sw-precache');
+    swPrecache = require('sw-precache'),
+    autoprefixer = require("gulp-autoprefixer"),
+    sass       = require("gulp-sass");
+
 
 var src         = './process',
     dest        = './app',
@@ -36,16 +41,34 @@ gulp.task('js', function () {
 gulp.task('html', function () {
 });
 
+// CSS task
 gulp.task('css', function () {
-  gulp.src(src + '/css/app.css')
-  .pipe(concatCss('app.css', {rebaseUrls: false}))
-  .pipe(gulpif(environment === 'production', cleanCSS()))
-  .pipe(gulp.dest(dest + '/css'));
+  gulp.src(src + '/scss/app.scss')
+      .pipe(sass({
+        outputStyle: "expanded"
+      }))
+      .pipe(autoprefixer({
+        browsers: ['last 3 versions'],
+        cascade: false
+      }))
+      .pipe(gulp.dest(dest + "/css"))
+      .pipe(gulpif(environment === 'production', cleanCSS()))
+      .pipe(rename({
+        suffix: ".min"
+      }))
+      .pipe(gulp.dest(dest + "/css"))
 });
+
+// gulp.task('css', function () {
+//   gulp.src(src + '/css/app.css')
+//       .pipe(concatCss('app.css', {rebaseUrls: false}))
+//       .pipe(gulpif(environment === 'production', cleanCSS()))
+//       .pipe(gulp.dest(dest + '/css'));
+// });
 
 gulp.task('watch', function () {
   gulp.watch([src + '/js/**/*', dest + '/data/**/*'], ['generate-service-worker', 'js']);
-  gulp.watch(src + '/css/*.css', ['generate-service-worker', 'css']);
+  gulp.watch(src + '/scss/*.scss', ['generate-service-worker', 'css']);
   gulp.watch(dest + '/*.html', ['generate-service-worker', 'html']);
 });
 
