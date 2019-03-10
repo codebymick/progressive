@@ -88,10 +88,19 @@
     <div class="page" id="projects">
         <div class="container">
             <h2 class="page-headline">Projects</h2>
-            <p>Collection of websites, webapps and other code projects. This list does not include any commercially
-                sensistive work as per confidentiality agreements and i have attempted to display a sampek of each of my
+            <p>Collection of website and webapp projects. This list does not include any commercially
+                sensistive work as per confidentiality agreements and i have attempted to display a sample of each of my
                 skill experiences or strengths...</p>
+            <script id="dashboard-template" type="text/x-handlebars-template">
 
+                <div class="accordian">
+                <ul>
+                    {{#each code}}
+                    <li>{{codeType}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+            </script>
             <script id="projects-template" type="text/x-handlebars-template">
                 {{#each projects}}
                 <div class="appointment media openprojectmodal" data-toggle="modal" data-target="#projectmodal"
@@ -105,7 +114,8 @@
                         <h3 class="coral media-heading projects-heading">{{project}}
                             <span class="black smallest project-type">- {{type}}</span>
                         </h3>
-                        <div class="appointment-owner"><span class="appointment-owner-title">Project brief: </span><span class="appointment-owner-name">{{brief}}</span></div>
+                        <div class="appointment-owner"><span class="appointment-owner-title">Project brief: </span><span
+                                class="appointment-owner-name">{{brief}}</span></div>
                     </div><!-- media-body -->
                 </div><!-- appointment media openprojectmodal -->
                 {{/each}}
@@ -146,6 +156,8 @@
     </div><!-- page-contact -->
 </main>
 
+<!-- MODALS  -->
+
 <div class="modal fade" id="foliomodal" tabindex="-1" role="dialog" aria-labelledby="thatModal">
     <div class="modal-dialog" data-dismiss="modal" aria-label="Close" role="document">
         <div class="modal-content">
@@ -164,7 +176,7 @@
 </div><!-- modal fade -->
 
 <div class="modal fade" id="projectmodal" tabindex="-1" role="dialog" aria-labelledby="thisModal">
-    <div class="modal-dialog" data-dismiss="modal" aria-label="Close" role="document">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" arial-label="Close" role="document"><span
@@ -177,7 +189,7 @@
             <div class="modal-body">
                 <p class="modal-brief"></p>
                 <p class="modal-outcome"></p>
-                    <img class="img-responsive modal-image"/>
+                <img class="img-responsive modal-image"/>
             </div><!--modal-body-->
         </div><!-- modal content -->
     </div><!-- modal dialog -->
