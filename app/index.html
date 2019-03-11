@@ -76,7 +76,7 @@
             <script id="dashboard-template" type="text/x-handlebars-template">
                 {{#each dashboard}}
                 <div class="col-md-2 col-sm-3 col-xs-4 openprojectmodal" data-toggle="modal"
-                     data-target="#foliomodal" data-name="{{name}}" data-extLink="{{link}}" data-info="{{description}}"
+                     data-target="{{target}}" data-name="{{name}}" data-extLink="{{link}}" data-info="{{description}}"
                      data-image="{{filename}}">
                     <img class="img-circle" src="images/inspiration/{{filename}}_tn.jpg" alt="{{name}} photo"/>
                 </div><!-- column -->
@@ -147,6 +147,50 @@
 </main>
 
 <!-- MODALS  -->
+<div class="modal fade" id="gitModal" tabindex="-1" role="dialog" aria-labelledby="thatModal">
+    <div class="modal-dialog" data-dismiss="modal" aria-label="Close" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" arial-label="Close" role="document"><span
+                        aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title modal-name"></h2>
+                <div class="modal-type"></div>
+            </div><!-- modal header -->
+            <div class="modal-body">
+                <p class="modal-info"></p>
+                <div id="graph" class="graph">
+                    <ul id="months" class="months"></ul>
+                    <ul class="days">
+                        <li>Sun</li>
+                        <li>Mon</li>
+                        <li>Tue</li>
+                        <li>Wed</li>
+                        <li>Thu</li>
+                        <li>Fri</li>
+                        <li>Sat</li>
+                    </ul>
+                    <ul class="squares"></ul>
+                    <div class="legend-wrapper">
+                        <div class="description">A summary of my daily pull requests, issues opened, and commits.
+                            (GITLAB)
+                        </div>
+                        <div class="contrib-legend text-gray"> Less
+                            <ul class="legend">
+                                <li style="background-color: #ffedcc"></li>
+                                <li style="background-color: #ffdb99"></li>
+                                <li style="background-color: #ffc966"></li>
+                                <li style="background-color: #ffb732"></li>
+                                <li style="background-color: #ffa500"></li>
+                            </ul>
+                            More
+                        </div>
+                    </div>
+                </div>
+
+            </div><!--modal-body-->
+        </div><!-- modal content -->
+    </div><!-- modal dialog -->
+</div><!-- modal fade -->
 
 <div class="modal fade" id="foliomodal" tabindex="-1" role="dialog" aria-labelledby="thatModal">
     <div class="modal-dialog" data-dismiss="modal" aria-label="Close" role="document">
@@ -174,7 +218,6 @@
                 <div class="h2"><span class="modal-title modal-name"></span> : <span class="modal-type"></span>
                     <span class="float-right"><a class="modal-link" target="_blank">link</a></span>
                 </div>
-
             </div><!-- modal header -->
             <div class="modal-body">
                 <p class="modal-brief"></p>

@@ -40,17 +40,20 @@
     {
       "name": "GIT",
       "description": "Daily GIT contribs for the past 12 months.  Sourced from GITHUB and GITLAB accounts",
-      "filename": "sourceCode"
+      "filename": "sourceCode",
+      "target": "#gitModal"
     },
     {
       "name": "Today",
       "description": "Summary of code usage for the most recent working day, sourced from activitywatch and wakatime data.",
-      "filename": "jenga"
+      "filename": "jenga",
+      "target": "#todayModal"
     },
     {
       "name": "Last 12 months",
       "description": "Summary of code usage for the past 12 months by code type, sourced from activitywatch and wakatime data.",
-      "filename": "aerialCode"
+      "filename": "aerialCode",
+      "target": "#yearModal"
     }
   ],
   "projects": [
