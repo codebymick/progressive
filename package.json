@@ -29,6 +29,8 @@
     "sw-precache": "^4.2.1"
   },
   "dependencies": {
+    "bourbon": "^4.0.0",
+    "bourbon-neat": "^3.0.1",
     "handlebars": "^4.0.5",
     "sass": "^1.17.2"
   }
