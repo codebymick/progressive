@@ -1,19 +1,18 @@
-var gulp       = require('gulp'),
-    gutil      = require('gulp-util'),
-    browserify = require('gulp-browserify'),
-    concatCss  = require('gulp-concat-css'),
-    cleanCSS   = require('gulp-clean-css'),
-    uglify     = require('gulp-uglify'),
-    sourcemaps = require('gulp-sourcemaps'),
-  plumber      = require('gulp-plumber'),
-    gulpif     = require('gulp-if'),
-    webserver  = require('gulp-webserver'),
+var gulp         = require('gulp'),
+    gutil        = require('gulp-util'),
+    browserify   = require('gulp-browserify'),
+    concatCss    = require('gulp-concat-css'),
+    cleanCSS     = require('gulp-clean-css'),
+    uglify       = require('gulp-uglify'),
+    sourcemaps   = require('gulp-sourcemaps'),
+    plumber      = require('gulp-plumber'),
+    gulpif       = require('gulp-if'),
+    webserver    = require('gulp-webserver'),
     rename       = require("gulp-rename"),
-    path       = require('path'),
-    swPrecache = require('sw-precache'),
+    path         = require('path'),
+    swPrecache   = require('sw-precache'),
     autoprefixer = require("gulp-autoprefixer"),
-    sass       = require("gulp-sass");
-
+    sass         = require("gulp-sass");
 
 var src         = './process',
     dest        = './app',
@@ -44,19 +43,20 @@ gulp.task('html', function () {
 // CSS task
 gulp.task('css', function () {
   gulp.src(src + '/scss/app.scss')
-      .pipe(sass({
-        outputStyle: "expanded"
-      }))
-      .pipe(autoprefixer({
-        browsers: ['last 3 versions'],
-        cascade: false
-      }))
-      .pipe(gulp.dest(dest + "/css"))
-      .pipe(gulpif(environment === 'production', cleanCSS()))
-      .pipe(rename({
-        suffix: ".min"
-      }))
-      .pipe(gulp.dest(dest + "/css"))
+  .pipe(sass({
+    outputStyle: "expanded",
+    sourcemaps: true
+  }))
+  .pipe(autoprefixer({
+    browsers: ['last 3 versions'],
+    cascade: false
+  }))
+  .pipe(gulp.dest(dest + "/css"))
+  .pipe(gulpif(environment === 'production', cleanCSS()))
+  .pipe(rename({
+    suffix: ".min"
+  }))
+  .pipe(gulp.dest(dest + "/css"))
 });
 
 // gulp.task('css', function () {
