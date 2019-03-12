@@ -68,7 +68,7 @@ gulp.task('css', function () {
 
 gulp.task('watch', function () {
   gulp.watch([src + '/js/**/*', dest + '/data/**/*'], ['generate-service-worker', 'js']);
-  gulp.watch(src + '/scss/*.scss', ['generate-service-worker', 'css']);
+  gulp.watch(src + '/scss/**/*.scss', ['generate-service-worker', 'css']);
   gulp.watch(dest + '/*.html', ['generate-service-worker', 'html']);
 });
 

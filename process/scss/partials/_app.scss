@@ -211,6 +211,12 @@ header {
 
 #dashboard {
   background-color: #000000;
+
+  #dashboard-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
   .page-headline {
     color: darkorange;
   }

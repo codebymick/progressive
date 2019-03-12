@@ -1,72 +1,33 @@
-#html-wrapper, #css-wrapper, #js-wrapper, #vue-wrapper {
-  display: none;
+:root {
+  --square-size: 1.3rem;
+  --square-gap: .3rem;
+  --week-width: calc(var(--square-size) + var(--square-gap));
 }
 
-.progress {
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-  background: #333;
-  border-radius: 13px;
-  height: 20px;
-  width: 100%;
-  padding: 3px;
-  bottom: 0;
-}
+#gitModal {
+  &.modal {
+    .modal-body {
+      overflow: auto;
+    }
+  }
 
-.progress:after {
-  content: '';
-  display: block;
-  background: orange;
-  height: 100%;
-  border-radius: 9px;
-}
+  overflow: auto;
 
-.skill_bar {
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-  background: #333;
-  border-radius: 13px;
-  width: 100%;
-  padding: 3px;
-  text-align: right;
-}
-
-.skill_bar_progress {
-  width: 0;
-  height: 100%;
-  background: orange;
-  border-radius: 9px;
-  font-size: 0.8rem !important;
-  padding-right: 10px;
-}
-
-.icon-overlay {
-  position: absolute;
-  left: 50%;
-  top: 35%;
-  transform: translatex(-50%);
-}
-
-.blur {
-  filter: blur(5px)
-}
-
-#graph{
-  left: 50%;
-  transform: translateX(-50%);
-
-  &.graph {
+  .graph {
     display: inline-grid;
     grid-template-areas: "empty months" "days squares";
     grid-template-columns: auto 1fr;
     grid-gap: .8rem;
-    padding: 20px 0;
+    padding: 20px 2vh 12vh;
     margin: 20px auto;
     position: relative;
-    padding-bottom: 12vh;
+    left: 50%;
+    transform: translateX(-50%);
   }
+
   ul {
     list-style: none;
+    font-size: 1rem !important;
   }
 
   .months {
@@ -99,13 +60,13 @@
     grid-auto-columns: var(--square-size);
   }
 
-
-
   .days li:nth-child(odd) {
     visibility: hidden;
   }
 
   .tips {
+    z-index: 999;
+
     span {
       opacity: 0;
       visibility: hidden;
@@ -141,6 +102,7 @@
   .bubble-arrow {
     display: inline-block;
     text-decoration: none;
+    font-size: 1.5em
 
     &:after, &:before {
       content: '';
@@ -168,7 +130,7 @@
   .squares {
     li {
       background-color: lightgray;
-      z-index: -1;
+      z-index: 999;
       position: relative;
 
       &[data-level="null"] {
@@ -201,45 +163,42 @@
     }
   }
 
-  .contrib-legend, .description {
-    position: absolute;
-    right: 0;
-    bottom: 20px;
-  }
+
 
   .description {
-    left: 0;
+    left: 2vh;
   }
 
   .text-gray {
     color: #586069 !important;
   }
 
-  .contrib-legend {
-    .legend {
-      bottom: -1px;
-      display: inline-block;
-      list-style: none;
-      margin: 0 5px;
-      position: relative;
-
-      li {
+  .legend-wrapper {
+    position: fixed;
+    width: 100%;
+    .contrib-legend, .description {
+      position: absolute;
+      right: 2vh;
+      bottom: 5vh;
+      font-size: 1rem;
+    }
+    .contrib-legend {
+      .legend {
+        bottom: -1px;
         display: inline-block;
-        height: 10px;
-        width: 10px;
+        list-style: none;
+        margin: 0 5px;
+        position: relative;
+
+        li {
+          display: inline-block;
+          height: 10px;
+          width: 10px;
+        }
       }
     }
   }
-
-  .contributions {
-    overflow-x: scroll;
-  }
 }
-  :root {
-    --square-size: .8rem;
-    --square-gap: .2rem;
-    --week-width: calc(var(--square-size) + var(--square-gap));
-  }
 
 
 

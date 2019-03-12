@@ -40,7 +40,7 @@
     {
       "name": "GIT",
       "description": "Daily GIT contribs for the past 12 months.  Sourced from GITHUB and GITLAB accounts",
-      "filename": "sourceCode",
+      "filename": "git",
       "target": "#gitModal"
     },
     {
