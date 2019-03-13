@@ -40,8 +40,14 @@
     {
       "name": "Today",
       "description": "Summary of code usage for the most recent working day, sourced from activitywatch and wakatime data.",
-      "filename": "git",
-      "target": "#pieModal"
+      "filename": "pie",
+      "target": "#pieModal",
+      "pie1": 10,
+      "pie2": 10,
+      "pie3": 30,
+      "pie4": 33,
+      "pie5": 33,
+      "pie6": 34
     },
     {
       "name": "Last 12 months",
