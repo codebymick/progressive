@@ -102,7 +102,7 @@
   .bubble-arrow {
     display: inline-block;
     text-decoration: none;
-    font-size: 1.5em
+    font-size: 1.5em;
 
     &:after, &:before {
       content: '';
@@ -164,7 +164,6 @@
   }
 
 
-
   .description {
     left: 2vh;
   }
@@ -176,12 +175,26 @@
   .legend-wrapper {
     position: fixed;
     width: 100%;
+
     .contrib-legend, .description {
       position: absolute;
-      right: 2vh;
+      right: 10vh;
       bottom: 5vh;
       font-size: 1rem;
     }
+
+    $colors-list: #ffedcc #ffdb99 #ffc966 #ffb732 #ffa500;
+    @each $current-color in $colors-list {
+      $i: index($colors-list, $current-color);
+      li.color-#{$i} {
+        background-color: $current-color;
+      }
+    }
+
+    .description {
+      left: 10vh
+    }
+
     .contrib-legend {
       .legend {
         bottom: -1px;

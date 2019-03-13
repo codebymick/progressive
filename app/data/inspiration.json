@@ -12,28 +12,22 @@
   ],
   "slideshow": [
     {
-      "filename": "sourceCode"
+      "filename": "r3fresh"
     },
     {
-      "filename": "jenga"
+      "filename": "tansom"
     },
     {
-      "filename": "aerialCode"
+      "filename": "spaceinvaders"
     },
     {
-      "filename": "keyboard"
+      "filename": "horaserweg"
     },
     {
-      "filename": "macbookPro"
+      "filename": "pfl"
     },
     {
-      "filename": "moreBack"
-    },
-    {
-      "filename": "codeBack"
-    },
-    {
-      "filename": "rubiks"
+      "filename": "allnations"
     }
   ],
   "dashboard": [
@@ -46,13 +40,13 @@
     {
       "name": "Today",
       "description": "Summary of code usage for the most recent working day, sourced from activitywatch and wakatime data.",
-      "filename": "jenga",
-      "target": "#todayModal"
+      "filename": "git",
+      "target": "#pieModal"
     },
     {
       "name": "Last 12 months",
       "description": "Summary of code usage for the past 12 months by code type, sourced from activitywatch and wakatime data.",
-      "filename": "aerialCode",
+      "filename": "git",
       "target": "#yearModal"
     }
   ],

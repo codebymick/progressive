@@ -128,7 +128,7 @@ $(document).ready(function(){
   var menuMonths = [];
   var count = 12; //position last square of grid on correct day or week
 
-  var display_to_today = 364 + (Math.floor(currDate / 7) * 7 + currDay);
+  var display_to_today = 364 + (Math.floor(currDate / 7) * 7 + currDay -7);
 
   if (currHour >= 10) {
     // display today's square with contributions only after 10am
@@ -147,9 +147,8 @@ $(document).ready(function(){
 
     var now = new Date();
     var flexDate = addDays(now, i - (364 + currDay));
-    var contrDate = flexDate.getDate()-7 + ' ' + monthArray[flexDate.getMonth()] + ', ' + flexDate.getFullYear();
-    var shortDate = flexDate.getDate() + ' ' + monthArray[flexDate.getMonth()];
-    var contrDay = flexDate.getDay();
+    var contrDate = flexDate.getDate() + ' ' + monthArray[flexDate.getMonth()] + ', ' + flexDate.getFullYear();
+    var shortDate = flexDate.getDate()-7 + ' ' + monthArray[flexDate.getMonth()];
     var holidays = ['21 Dec', '22 Dec', '23 Dec', '24 Dec', '25 Dec', '26 Dec', '27 Dec', '28 Dec', '29 Dec', '30 Dec', '31 Dec', '1 Jan', '1 Jul', '2 Jul', '3 Jul', '4 Jul', '5 Jul', '6 Jul', '7 Jul', '8 Jul', '9 Jul', '10 Jul', '11 Jul', '12 Jul', '13 Jul', '14 Jul', '15 Jul', '16 Jul', '17 Jul', '18 Jul', '19 Jul', '3 Oct', '4 Oct', '5 Oct', '6 Oct', '7 Oct', '8 Oct', '9 Oct', '10 Oct', '11 Oct', '12 Oct'];
     var textInsert = "<span class=\"bubble-arrow\">" + " ".concat(level, " ") + popupText + contrDate + "</span></li>";
 
