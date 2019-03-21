@@ -29,22 +29,23 @@ header .navbar-default .navbar-nav a {
 }
 
 header .navbar-default .navbar-nav a:hover {
-  color: #EEC856;
+  color: #337ab7;
 }
 ul.nav{
   margin: 25px 0;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: white;
-  background-color: darkorange;
+  background-color: #337ab7;
 }
 
 header .navbar-default .navbar-nav .active a {
   font-weight: 600;
-  color: #EEC856;
+  color: #337ab7;
   background: transparent;
-  border-bottom: 4px solid #EEC856;
-  text-shadow: none;
+  //border: 1px solid rgba(255, 255, 255, .3);
+  border-bottom: 4px solid #337ab7;
+  text-shadow: 1px 1px 1px white;
 }
 
 header .navbar-default .navbar-nav .active a:hover {
@@ -99,7 +100,7 @@ header {
   }
 
   .navbar-toggle {
-    background-color: darkorange;
+    background-color: #337ab7;
   }
 
   .navbar-default .navbar-toggle .icon-bar {
@@ -209,7 +210,7 @@ header {
   margin-bottom: 20px;
 }
 
-#dashboard .col-xs-1, #dashboard .col-sm-1, #dashboard .col-md-1, #dashboard .col-lg-1, #dashboard .col-xs-2, #dashboard .col-sm-2, #dashboard .col-md-2, #dashboard .col-lg-2, #dashboard .col-xs-3, #dashboard .col-sm-3, #dashboard .col-md-3, #dashboard .col-lg-3, #dashboard .col-xs-4, #dashboard .col-sm-4, #dashboard .col-md-4, #dashboard .col-lg-4, #dashboard .col-xs-5, #dashboard .col-sm-5, #dashboard .col-md-5, #dashboard .col-lg-5, #dashboard .col-xs-6, #dashboard .col-sm-6, #dashboard .col-md-6, #dashboard .col-lg-6, #dashboard .col-xs-7, #dashboard .col-sm-7, #dashboard .col-md-7, #dashboard .col-lg-7, #dashboard .col-xs-8, #dashboard .col-sm-8, #dashboard .col-md-8, #dashboard .col-lg-8, #dashboard .col-xs-9, #dashboard .col-sm-9, #dashboard .col-md-9, #dashboard .col-lg-9, #dashboard .col-xs-10, #dashboard .col-sm-10, #dashboard .col-md-10, #dashboard .col-lg-10, #dashboard .col-xs-11, #dashboard .col-sm-11, #dashboard .col-md-11, #dashboard .col-lg-11, #dashboard .col-xs-12, #dashboard .col-sm-12, #dashboard .col-md-12, #dashboard .col-lg-12 {
+.page .col-xs-1, #dashboard .col-sm-1, #dashboard .col-md-1, #dashboard .col-lg-1, #dashboard .col-xs-2, #dashboard .col-sm-2, #dashboard .col-md-2, #dashboard .col-lg-2, #dashboard .col-xs-3, #dashboard .col-sm-3, #dashboard .col-md-3, #dashboard .col-lg-3, #dashboard .col-xs-4, #dashboard .col-sm-4, #dashboard .col-md-4, #dashboard .col-lg-4, #dashboard .col-xs-5, #dashboard .col-sm-5, #dashboard .col-md-5, #dashboard .col-lg-5, #dashboard .col-xs-6, #dashboard .col-sm-6, #dashboard .col-md-6, #dashboard .col-lg-6, #dashboard .col-xs-7, #dashboard .col-sm-7, #dashboard .col-md-7, #dashboard .col-lg-7, #dashboard .col-xs-8, #dashboard .col-sm-8, #dashboard .col-md-8, #dashboard .col-lg-8, #dashboard .col-xs-9, #dashboard .col-sm-9, #dashboard .col-md-9, #dashboard .col-lg-9, #dashboard .col-xs-10, #dashboard .col-sm-10, #dashboard .col-md-10, #dashboard .col-lg-10, #dashboard .col-xs-11, #dashboard .col-sm-11, #dashboard .col-md-11, #dashboard .col-lg-11, #dashboard .col-xs-12, #dashboard .col-sm-12, #dashboard .col-md-12, #dashboard .col-lg-12 {
   padding-right: 5px;
   padding-left: 5px;
 }
@@ -223,10 +224,10 @@ header {
     justify-content: space-around;
   }
   .page-headline {
-    color: darkorange;
+    color: #337ab7;
   }
   p {
-    color: coral;
+    color: #337ab7;
   }
   img {
     width: 100%;
@@ -237,7 +238,7 @@ header {
 
 #projects {
   line-height: 100%;
-  background: hsl(38, 24%, 87%);
+  background: white;
   .page-headline {
     color: hsl(10, 79%, 38%);
   }
@@ -277,10 +278,6 @@ header {
     font-size: .85em;
     font-style: italic;
   }
-}
-#projects .col-xs-1, #projects .col-sm-1, #projects .col-md-1, #projects .col-lg-1, #projects .col-xs-2, #projects .col-sm-2, #projects .col-md-2, #projects .col-lg-2, #projects .col-xs-3, #projects .col-sm-3, #projects .col-md-3, #projects .col-lg-3, #projects .col-xs-4, #projects .col-sm-4, #projects .col-md-4, #projects .col-lg-4, #projects .col-xs-5, #projects .col-sm-5, #projects .col-md-5, #projects .col-lg-5, #projects .col-xs-6, #projects .col-sm-6, #projects .col-md-6, #projects .col-lg-6, #projects .col-xs-7, #projects .col-sm-7, #projects .col-md-7, #projects .col-lg-7, #projects .col-xs-8, #projects .col-sm-8, #projects .col-md-8, #projects .col-lg-8, #projects .col-xs-9, #projects .col-sm-9, #projects .col-md-9, #projects .col-lg-9, #projects .col-xs-10, #projects .col-sm-10, #projects .col-md-10, #projects .col-lg-10, #projects .col-xs-11, #projects .col-sm-11, #projects .col-md-11, #projects .col-lg-11, #projects .col-xs-12, #projects .col-sm-12, #projects .col-md-12, #projects .col-lg-12 {
-  padding-right: 5px;
-  padding-left: 5px;
 }
 
 .modal {
@@ -373,4 +370,7 @@ header {
   .reloadbtn-lg {
     display: inline;
   }
+}
+#contact{
+  text-align: center;
 }

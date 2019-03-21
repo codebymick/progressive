@@ -162,7 +162,6 @@
     </div><!-- page-projects -->
     <div class="page" id="contact">
         <div class="container">
-            <h2 class="page-headline">Contact</h2>
             <script id="contact-template" type="text/x-handlebars-template">
                 {{#each contact}}
                 <div class="appointment media openprojectmodal" data-toggle="modal" data-target=""
@@ -174,8 +173,9 @@
                         <!--alt="{{name}} photo">-->
                     </div><!-- media-left media-top -->
                     <div class="media-body">
-                        <h3 class="media-heading projects-heading">{{name}} - <span class="smaller"
-                                                                                    class="project-type">{{job}}</span>
+
+                        <h2 class="page-headline">{{name}} - {{job}}</h2>
+                        <h3 class="media-heading projects-heading">
                         </h3>
                         <div class="appointment-owner">
                             <p class="appointment-owner-name">{{qual1}}</p>
