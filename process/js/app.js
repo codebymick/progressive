@@ -17,8 +17,8 @@ $(function() {
     var slideshowTemplate = $('#slideshow-template').html();
     var slideshowScript = Handlebars.compile(slideshowTemplate);
 
-    var dashboardTemplate = $('#dashboard-template').html();
-    var dashboardScript = Handlebars.compile(dashboardTemplate);
+    // var dashboardTemplate = $('#dashboard-template').html();
+    // var dashboardScript = Handlebars.compile(dashboardTemplate);
 
     var projectsTemplate = $('#projects-template').html();
     var projectsScript = Handlebars.compile(projectsTemplate);
@@ -28,7 +28,7 @@ $(function() {
 
     $('.loader').fadeOut(2000);
     $('#slideshow-content').append(slideshowScript(data));
-    $('#dashboard-content').append(dashboardScript(data));
+    // $('#dashboard-content').append(dashboardScript(data));
     $('#projects-content').append(projectsScript(data));
     $('#contact-content').append(contactScript(data));
 
@@ -59,12 +59,12 @@ $(function() {
   });
 
   $(document).on('click', '.openprojectmodal', function() {
-    var JS = ($(this).data('pie1'))*3.6;
-    var CSS = ($(this).data('pie2'))*3.6;
-    var HTML = ($(this).data('pie3'))*3.6;
-    var SASS = ($(this).data('pie4'))*3.6;
-    var PHP = ($(this).data('pie5'))*3.6;
-    var Vue = ($(this).data('pie6'))*3.6;
+    // var JS = ($(this).data('pie1'))*3.6;
+    // var CSS = ($(this).data('pie2'))*3.6;
+    // var HTML = ($(this).data('pie3'))*3.6;
+    // var SASS = ($(this).data('pie4'))*3.6;
+    // var PHP = ($(this).data('pie5'))*3.6;
+    // var Vue = ($(this).data('pie6'))*3.6;
 
     $('.modal-name').html($(this).data('name'));
     $('.modal-type').html($(this).data('type'));
@@ -72,12 +72,12 @@ $(function() {
     $('.modal-info').html($(this).data('info'));
     $('.modal-brief').html($(this).data('brief'));
     $('.modal-outcome').html($(this).data('outcome'));
-    $('#pieSlice1 .pie').css('transform', 'rotate(' + JS + 'deg)');
-    $('#pieSlice2 .pie').css('transform', 'rotate(' + CSS + 'deg)');
-    $('#pieSlice3 .pie').css('transform', 'rotate(' + HTML + 'deg)');
-    $('#pieSlice4 .pie').css('transform', 'rotate(' + SASS + 'deg)');
-    $('#pieSlice5 .pie').css('transform', 'rotate(' + PHP + 'deg)');
-    $('#pieSlice6 .pie').css('transform', 'rotate(' + Vue + 'deg)');
+    // $('#pieSlice1 .pie').css('transform', 'rotate(' + JS + 'deg)');
+    // $('#pieSlice2 .pie').css('transform', 'rotate(' + CSS + 'deg)');
+    // $('#pieSlice3 .pie').css('transform', 'rotate(' + HTML + 'deg)');
+    // $('#pieSlice4 .pie').css('transform', 'rotate(' + SASS + 'deg)');
+    // $('#pieSlice5 .pie').css('transform', 'rotate(' + PHP + 'deg)');
+    // $('#pieSlice6 .pie').css('transform', 'rotate(' + Vue + 'deg)');
     $('.modal-link').attr('href', $(this).data('link'));
     $('.modal-image').attr('src', 'images/inspiration/' + $(this).data('image')+ '.jpg');
     $('.modal-image').attr('alt', $(this).data('name')+ ' photo');

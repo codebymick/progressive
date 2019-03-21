@@ -13,12 +13,12 @@ h1, h2, h3, h4, h5, h6 {
 /**  Header Navigation **/
 
 header .navbar {
-  padding: 30px 0;
+  padding: 0;
   transition: all .5s ease-out;
 }
 
 header .navbar-default {
-  background-color: transparent;
+  background-color: orangered;
   border: none;
 }
 
@@ -30,10 +30,12 @@ header .navbar-default .navbar-nav a {
 header .navbar-default .navbar-nav a:hover {
   color: #EEC856;
 }
-
+ul.nav{
+  padding: 25px 0;
+}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: white;
-  background-color: transparent;
+  background-color: darkorange;
 }
 
 header .navbar-default .navbar-nav .active a {
