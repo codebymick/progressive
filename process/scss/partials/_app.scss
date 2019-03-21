@@ -1,12 +1,13 @@
 /**  Basic Page CSS **/
-body {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+body, p{
+  font-family: 'Josefin Slab', serif;
   font-weight: 300;
   font-size: 2em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
+  font-weight: 600;
+  font-size: 3rem;
   margin: 0;
 }
 
@@ -18,7 +19,7 @@ header .navbar {
 }
 
 header .navbar-default {
-  background-color: orangered;
+  background-color: gray;
   border: none;
 }
 
@@ -31,7 +32,7 @@ header .navbar-default .navbar-nav a:hover {
   color: #EEC856;
 }
 ul.nav{
-  padding: 25px 0;
+  margin: 25px 0;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: white;
@@ -75,9 +76,10 @@ header {
   .navbar-brand {
     background: url(../images/logo.png);
     background-repeat: no-repeat;
-    background-position: 15px 0;
+    background-position: bottom left;
     background-size: 28%;
     height: auto;
+    padding:9px;
 
     h1 {
       color: white;
@@ -85,6 +87,8 @@ header {
       font-size: 1.8em;
       font-weight: 300;
       padding-left: 105px;
+      padding-bottom: 5px;
+      margin-top: 5px;
     }
 
     span.subhead {
@@ -111,17 +115,19 @@ header {
       padding-top: 0;
       padding-bottom: 0;
       .navbar-nav {
-        padding-top: 10px;
+        margin: 15px auto;
       }
       .navbar-brand {
         background-size: 36px;
-        background-position: top left;
+        background-position: bottom left;
         margin-top: 5px;
         padding-bottom: 0;
         margin-left: 10px;
         h1 {
           font-size: 1.1em;
           padding-left: 38px;
+          //padding-bottom: 10px;
+          margin-top:10px;
         }
         span.subhead {
           display: none;
@@ -181,14 +187,11 @@ header {
   }
 }
 
-
-.carousel-control
-
   /**  Page **/
 .page {
   padding: 40px 0;
   font-size: 1.7rem;
-  line-height: 100%;
+  line-height: 1.2;
 }
 
 .page-headline {
@@ -266,7 +269,7 @@ header {
   .appointment-owner-name {
     font-weight: 300;
     color: rgba(0, 0, 0, .5);
-    font-size: .95em;
+    font-size: 1.1em;
     font-style: italic;
   }
   .appointment-reason {

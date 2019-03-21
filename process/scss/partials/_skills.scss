@@ -15,7 +15,10 @@
     }
   }
 
-  overflow: auto;
+  #graph{
+    overflow-y: auto;
+    width: 95%;
+  }
 
   .graph {
     display: inline-grid;
@@ -180,7 +183,7 @@
 
     .contrib-legend, .description {
       position: absolute;
-      right: 1vh;
+      right: 10vh;
       bottom: 5vh;
       font-size: 1rem;
     }
@@ -194,7 +197,7 @@
     }
 
     .description {
-      left: 0vh
+      left: 10vh
     }
 
     .contrib-legend {

@@ -12,22 +12,28 @@
   ],
   "slideshow": [
     {
-      "filename": "r3fresh"
+      "filename": "codeBack"
     },
     {
-      "filename": "tansom"
+      "filename": "code-stats1"
     },
     {
       "filename": "spaceinvaders"
     },
     {
-      "filename": "horaserweg"
+      "filename": "code-stats2"
     },
     {
-      "filename": "pfl"
+      "filename": "tansom"
     },
     {
-      "filename": "allnations"
+      "filename": "code-stats4"
+    },
+    {
+      "filename": "macbookPro"
+    },
+    {
+      "filename": "code-stats3"
     }
   ],
   "dashboard": [
@@ -64,7 +70,7 @@
       "brief": "to allow auto reloading of chrome browser when working in local dev environment.",
       "outcome": "chrome browser extension monitors local html, css and js files and reloads browser on detected changes",
       "filename": "r3fresh",
-      "link": "https://github.com/codebymick"
+      "link": "https://chrome.google.com/webstore/detail/r3fresh/kedglhfbgkhggkbcabnggfaafboeckno"
     },
     {
       "project": "Tansom Studios",
@@ -73,7 +79,7 @@
       "brief": "to deliver a collection of video project files with the ability for an admin to update and maintain the site content.  client requested secure backend access with fast page speeds and SEO optimisation.",
       "outcome": "i built a custom wordpress site to offer all the advantages of the popular CMS with bespoke inclusions to allow for the client layouts.",
       "filename": "tansom",
-      "link": "https://github.com/codebymick"
+      "link": "https://www.tansom-studio.com/"
     },
     {
       "project": "Innitiativ-Horaserweg",
@@ -90,7 +96,7 @@
       "brief": "open source project falling back to the classic retro arcade game",
       "outcome": "i built a HTML page with javascript and css",
       "filename": "spaceinvaders",
-      "link": ""
+      "link": "https://codepen.io/codebymick/pen/EMOQmM?editors=1111"
     },
     {
       "project": "Parrotfish Lodge",
@@ -115,12 +121,14 @@
       "job": "Frontend Developer",
       "contact": "mick",
       "domain": "codebymick",
-      "qual1": "Bachelor of Info Tech",
-      "qual2": "Bachelor of Business",
+      "qual1": "HTML, CSS, Javascript, Sass, Php, GIT, node, photoshop, Vue, Laravel, Angular...",
+      "qual2": "Bachelor of Info Tech, Bachelor of Business",
       "qual3": "5 years+ fulltime professional experience",
-      "description": "I love UI ceneterd designs and working frontend.  Always keen to take on another project",
+      "sample": "https://wakatime.com/@codebymick/projects/fzfqujwtwz",
+      "description": "I love UI centered designs.  I love working frontend. \n I'm always keen to take on another project",
       "cta": "drop me an email...",
-      "filename": ""
+      "filename": "",
+      "currentProject": "https://wakatime.com/@codebymick/projects/fzfqujwtwz"
     }
   ]
 }

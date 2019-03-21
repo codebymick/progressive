@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mick White Developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.min.css">
     <link rel="manifest" href="/manifest.json">
 
@@ -72,36 +73,33 @@
     <div class="page" id="stats">
         <div class="container">
             <div id="stats-content">
-                <div class="col-xs-12 col-lg-6">
+                <div class="col-xs-12 col-md-6">
                     <figure>
                         <embed src="https://wakatime.com/share/@codebymick/ef4581ca-afcf-4ddf-ac4b-9c00bba3701c.svg"></embed>
                     </figure>
                 </div>
-                <div class="col-xs-12 col-lg-6">
+                <div class="col-xs-12 col-md-6">
                     <figure>
                         <embed src="https://wakatime.com/share/@codebymick/3a71d898-6190-43af-bdca-0c5006102c80.svg"></embed>
                     </figure>
                 </div>
-                <div class="col-xs-12">
-                    <div id="git">
-                        <div id="graph" class="graph">
-                            <ul id="months" class="months"></ul>
-                            <ul class="days">
-                                <li>Sun</li>
-                                <li>Mon</li>
-                                <li>Tue</li>
-                                <li>Wed</li>
-                                <li>Thu</li>
-                                <li>Fri</li>
-                                <li>Sat</li>
-                            </ul>
-                            <ul class="squares"></ul>
-
-                        </div>
+                <div id="git" class="col-xs-12">
+                    <div id="graph" class="graph">
+                        <ul id="months" class="months"></ul>
+                        <ul class="days">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                        </ul>
+                        <ul class="squares"></ul>
                     </div>
                     <div class="legend-wrapper">
                         <div class="description">A summary of my daily pull requests, issues opened, and commits.
-                            (GITLAB)
+                            (GITLAB & GITHUB)
                         </div>
                         <div class="contrib-legend text-gray"> Less
                             <ul class="legend">
@@ -139,8 +137,6 @@
     <div class="page" id="projects">
         <div class="container">
             <h2 class="page-headline">Projects</h2>
-            <p>Collection of website and webapp projects. A sample of each of my
-                skill experiences or strengths...</p>
 
             <script id="projects-template" type="text/x-handlebars-template">
                 {{#each projects}}
@@ -153,7 +149,7 @@
                     </div><!-- media-left media-top -->
                     <div class="media-body">
                         <h3 class="coral media-heading projects-heading">{{project}}
-                            <span class="black smallest project-type">- {{type}}</span>
+                            <span class="black smaller project-type">- {{type}}</span>
                         </h3>
                         <div class="appointment-owner"><span class="appointment-owner-title">Project brief: </span><span
                                 class="appointment-owner-name">{{brief}}</span></div>
@@ -169,24 +165,29 @@
             <h2 class="page-headline">Contact</h2>
             <script id="contact-template" type="text/x-handlebars-template">
                 {{#each contact}}
-                <div class="appointment media openprojectmodal" data-toggle="modal" data-target="#foliomodal"
-                     data-petname="{{name}}" data-job="{{job}}" data-petowner="{{domain}}"
-                     data-petinfo1="{{qual1}}" data-petinfo2="{{qual2}}" data-petinfo3="{{qual3}}"
+                <div class="appointment media openprojectmodal" data-toggle="modal" data-target=""
+                     data-name="{{name}}" data-job="{{job}}" data-domain="{{domain}}"
+                     data-qual1="{{qual1}}" data-sample="{{sample}}" data-qual2="{{qual2}}" data-qual3="{{qual3}}"
                      data-sampleimage="{{filename}}">
                     <div class="media-left media-top">
                         <!--<img class="media-object appointment-img img-rounded" src="images/inspiration/{{filename}}.jpg"-->
                         <!--alt="{{name}} photo">-->
                     </div><!-- media-left media-top -->
                     <div class="media-body">
-                        <h3 class="media-heading projects-heading">{{name}}<p class="project-type">{{job}}</p></h3>
+                        <h3 class="media-heading projects-heading">{{name}} - <span class="smaller"
+                                                                                    class="project-type">{{job}}</span>
+                        </h3>
                         <div class="appointment-owner">
                             <p class="appointment-owner-name">{{qual1}}</p>
+                            <p class="appointment-owner-name"><a href="{{sample}}" target="_blank">check some stats for
+                                a recent/ongoing project...</a></p>
                             <p class="appointment-owner-name">{{qual2}}</p>
                             <p class="appointment-owner-name">{{qual3}}</p>
                             <p class="appointment-reason">{{description}}</p>
                             <br>
-                            <p><span class="appointment-reason">{{cta}}:</span>
-                                <span class="appointment-owner-title">{{contact}}@{{domain}}.com</span></p>
+                            <p><span class="appointment-reason">{{cta}}</span>
+                                <a href="mailto:{{contact}}@{{domain}}.com"><span class="appointment-owner-title">mail@{{domain}}.com</span></a>
+                            </p>
                         </div>
                     </div><!-- media-body -->
                 </div><!-- appointment media openprojectmodal -->
