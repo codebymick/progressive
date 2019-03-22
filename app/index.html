@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mick White Developer</title>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt:400,700" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.min.css">
     <link rel="manifest" href="/manifest.json">
 
@@ -74,15 +74,18 @@
         <div class="container">
             <div id="stats-content">
                 <div class="col-xs-12 col-md-6">
-                    <figure>
-                        <embed src="https://wakatime.com/share/@codebymick/ef4581ca-afcf-4ddf-ac4b-9c00bba3701c.svg"></embed>
-                    </figure>
+                    <figure><embed src="https://wakatime.com/share/@codebymick/b1318cf2-b51c-4e3d-bc2c-13649c298b65.svg"></embed></figure>
                 </div>
                 <div class="col-xs-12 col-md-6">
-                    <figure>
-                        <embed src="https://wakatime.com/share/@codebymick/3a71d898-6190-43af-bdca-0c5006102c80.svg"></embed>
-                    </figure>
+                    <figure><embed src="https://wakatime.com/share/@codebymick/e8eafebb-3047-4301-9583-41822ef816ce.svg"></embed></figure>
                 </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="page" id="gitStats">
+        <div class="container">
+            <div id="gitStats-content">
                 <div id="git" class="col-xs-12">
                     <div id="graph" class="graph">
                         <ul id="months" class="months"></ul>
@@ -118,22 +121,7 @@
 
         </div>
     </div>
-    <!--<div class="page" id="dashboard">-->
-    <!--<div class="container">-->
-    <!--<h2 class="page-headline">Dashboard</h2>-->
-    <!--<p>short and longterm stats of my current code trends and usage</p>-->
-    <!--<script id="dashboard-template" type="text/x-handlebars-template">-->
-    <!--{{#each dashboard}}-->
-    <!--<div class="col-md-2 col-sm-3 col-xs-4 openprojectmodal" data-toggle="modal"-->
-    <!--data-target="{{target}}" data-name="{{name}}" data-extLink="{{link}}" data-info="{{description}}" data-pie1="{{pie1}}" data-pie2="{{pie2}}" data-pie3="{{pie3}}" data-pie4="{{pie4}}"-->
-    <!--data-image="{{filename}}">-->
-    <!--<img class="img-circle" src="images/inspiration/{{filename}}_tn.jpg" alt="{{name}} photo"/>-->
-    <!--</div>&lt;!&ndash; column &ndash;&gt;-->
-    <!--{{/each}}-->
-    <!--</script>-->
-    <!--<div id="dashboard-content"></div>-->
-    <!--</div>&lt;!&ndash; container &ndash;&gt;-->
-    <!--</div>&lt;!&ndash; page-dashboard &ndash;&gt;-->
+
     <div class="page" id="projects">
         <div class="container">
             <h2 class="page-headline">Projects</h2>
@@ -175,14 +163,18 @@
                     <div class="media-body">
 
                         <h2 class="page-headline">{{name}} - {{job}}</h2>
+                        <br>
                         <h3 class="media-heading projects-heading">
                         </h3>
                         <div class="appointment-owner">
                             <p class="appointment-owner-name">{{qual1}}</p>
-                            <p class="appointment-owner-name"><a href="{{sample}}" target="_blank">check some stats for
+                            <br>
+                            <p class="appointment-owner-name"><a href="{{sample}}" target="_blank">...stats for
                                 a recent/ongoing project...</a></p>
+                            <br>
                             <p class="appointment-owner-name">{{qual2}}</p>
                             <p class="appointment-owner-name">{{qual3}}</p>
+                            <br>
                             <p class="appointment-reason">{{description}}</p>
                             <br>
                             <p><span class="appointment-reason">{{cta}}</span>

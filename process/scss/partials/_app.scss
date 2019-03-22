@@ -1,8 +1,9 @@
 /**  Basic Page CSS **/
 body, p{
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Rokkitt', serif;
   font-weight: 300;
   font-size: 2em;
+  overflow-x:hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,32 +25,31 @@ header .navbar-default {
 }
 
 header .navbar-default .navbar-nav a {
-  color: white;
+  color: whitesmoke;
   padding: 5px 8px;
 }
 
 header .navbar-default .navbar-nav a:hover {
-  color: #337ab7;
+  color: #ad2e14;
 }
 ul.nav{
   margin: 25px 0;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: white;
-  background-color: #337ab7;
+  color: whitesmoke;
+  background-color: #ad2e14;
 }
 
 header .navbar-default .navbar-nav .active a {
   font-weight: 600;
-  color: #337ab7;
+  color: #ad2e14;
   background: transparent;
   //border: 1px solid rgba(255, 255, 255, .3);
-  border-bottom: 4px solid #337ab7;
-  text-shadow: 1px 1px 1px white;
+  border-bottom: 4px solid #ad2e14;
 }
 
 header .navbar-default .navbar-nav .active a:hover {
-  color: white;
+  color: whitesmokesmoke;
   background: transparent;
   text-shadow: none;
 }
@@ -83,7 +83,7 @@ header {
     padding:9px;
 
     h1 {
-      color: white;
+      color: whitesmoke;
       margin: 0;
       font-size: 1.8em;
       font-weight: 300;
@@ -100,11 +100,11 @@ header {
   }
 
   .navbar-toggle {
-    background-color: #337ab7;
+    background-color: #ad2e14;
   }
 
   .navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
+    background-color: whitesmoke;
   }
 
   .inbody {
@@ -121,14 +121,11 @@ header {
       .navbar-brand {
         background-size: 36px;
         background-position: bottom left;
-        margin-top: 5px;
         padding-bottom: 0;
         margin-left: 10px;
         h1 {
           font-size: 1.1em;
           padding-left: 38px;
-          //padding-bottom: 10px;
-          margin-top:10px;
         }
         span.subhead {
           display: none;
@@ -193,6 +190,7 @@ header {
   padding: 40px 0;
   font-size: 1.7rem;
   line-height: 1.2;
+  width: 100vw;
 }
 
 .page-headline {
@@ -224,10 +222,10 @@ header {
     justify-content: space-around;
   }
   .page-headline {
-    color: #337ab7;
+    color: #ad2e14;
   }
   p {
-    color: #337ab7;
+    color: #ad2e14;
   }
   img {
     width: 100%;
@@ -238,7 +236,7 @@ header {
 
 #projects {
   line-height: 100%;
-  background: white;
+  background: whitesmoke;
   .page-headline {
     color: hsl(10, 79%, 38%);
   }
@@ -338,7 +336,7 @@ header {
 
 .loader-text {
   font-size: 1em;
-  color: white;
+  color: whitesmoke;
   text-shadow: 1px 1px 4px black;
 }
 

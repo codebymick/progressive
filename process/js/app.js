@@ -200,4 +200,4 @@ $(document).ready(function(){
   }
 });
 
-
+// TODO effect of collecting page sections to top as user scrolls
