@@ -401,8 +401,9 @@ header {
   max-width: 200px;
 }
 a.btn{
-  padding: 0 2em;
-  border-radius: 20%;
+  padding: 1vh 2vh;
+  margin-bottom: 1vh;
+  border-radius: 20px;
   background-color:#337ab7;
   color: whitesmoke;
   &:hover, &:focus{
@@ -410,6 +411,10 @@ a.btn{
     background-color: whitesmoke;
     color: #337ab7;
   }
+}
+.row.flexed{
+  display:flex;
+  items: space-between;
 }
 
 .reloadbtn {
