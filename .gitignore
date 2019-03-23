@@ -9,3 +9,4 @@ builds/development/images/**
 *.svg
 *.jpg
 images/
+*.docx
