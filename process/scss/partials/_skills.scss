@@ -17,7 +17,6 @@
 
   #graph{
     overflow-y: auto;
-    width: 95%;
   }
 
   .graph {
@@ -25,11 +24,12 @@
     grid-template-areas: "empty months" "days squares";
     grid-template-columns: auto 1fr;
     grid-gap: .8rem;
-    padding: 20px 2vh 12vh;
+    height:auto;
+    padding: 2vh 2vh 2vh;
     margin: 20px auto;
-    position: relative;
     left: 50%;
     transform: translateX(-50%);
+    position:relative;
   }
 
   ul {
@@ -182,9 +182,6 @@
   .legend-wrapper {
 
     .contrib-legend, .description {
-      position: absolute;
-      right: 10vh;
-      bottom: 5vh;
       font-size: 2rem;
     }
 

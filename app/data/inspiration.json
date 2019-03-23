@@ -43,11 +43,11 @@
   ],
   "projects": [
     {
-      "project": "R3fresh",
+      "project": "r3fresh",
       "type": "Chrome browser extension",
       "code": "HTML, css, javascript",
-      "brief": "to allow auto reloading of chrome browser when working in local dev environment.",
-      "outcome": "chrome browser extension monitors local html, css and js files and reloads browser on detected changes",
+      "brief": "I wanted to automate reloading of my Chrome browser when working in local dev environment.",
+      "outcome": "Utilising opensource code and just playing around, I built a chrome browser extension to monitor changes in local html, css and js files. The browser reloads on detected changes",
       "filename": "r3fresh",
       "link": "https://chrome.google.com/webstore/detail/r3fresh/kedglhfbgkhggkbcabnggfaafboeckno"
     },
@@ -55,8 +55,8 @@
       "project": "Tansom Studios",
       "type": "Wordpress Site",
       "code": "PHP, css, javascript",
-      "brief": "to deliver a collection of video project files with the ability for an admin to update and maintain the site content.  client requested secure backend access with fast page speeds and SEO optimisation.",
-      "outcome": "i built a custom wordpress site to offer all the advantages of the popular CMS with bespoke inclusions to allow for the client layouts.",
+      "brief": "The client wanted to showcase a collection of video projects with the ability to self-update/maintain the site content.  The client requested secure backend access with fast page speeds and SEO optimisation.",
+      "outcome": "I built a custom Wordpress site to offer all the advantages of the popular CMS with bespoke inclusions to allow for the client layouts.",
       "filename": "tansom",
       "link": "https://www.tansom-studio.com/"
     },
@@ -72,16 +72,16 @@
     {
       "project": "Space Invaders",
       "type": "javascript, HTML, CSS",
-      "brief": "open source project falling back to the classic retro arcade game",
-      "outcome": "i built a HTML page with javascript and css",
+      "brief": "Open source project throwing back to the classic retro arcade game.",
+      "outcome": "A fun HTML page with javascript and css",
       "filename": "spaceinvaders",
       "link": "https://codepen.io/codebymick/pen/EMOQmM?editors=1111"
     },
     {
       "project": "Parrotfish Lodge",
       "type": "javascript, HTML, CSS",
-      "brief": "modernise existing business site with secure e-commerce features and updatable content",
-      "outcome": "i built a php site with mySQL backend, implemented google tag manager & twitter api feed",
+      "brief": "I needed to modernise the existing business site with secure e-commerce features and updatable content.",
+      "outcome": "A php site with mySQL backend, implemented google tag manager & twitter api feed.",
       "filename": "pfl",
       "link": "https://web.archive.org/web/20140214003504/http://www.parrotfishlodge.com/"
     },
@@ -89,7 +89,7 @@
       "project": "allnations.com",
       "type": "javascript, HTML, CSS",
       "brief": "modernise existing business site",
-      "outcome": "simple HTML and CSS site",
+      "outcome": "Simple HTML and CSS site build. Before Javascript was a thing and before UX centered design swept the world.",
       "filename": "allnations",
       "link": "https://web.archive.org/web/20050309051120/http://www.backpackerscentre.com/allnations/"
     }
@@ -102,12 +102,13 @@
       "domain": "codebymick",
       "qual1": "HTML, CSS, Javascript, Sass, Php, GIT, node, photoshop, Vue, Laravel, Angular...",
       "qual2": "Bachelor of Info Tech, Bachelor of Business",
-      "qual3": "5 years+ fulltime professional experience",
+      "qual3": "5 years+ professional Web Developer experience",
       "sample": "https://wakatime.com/@codebymick/projects/fzfqujwtwz",
       "description": "I love UI centered designs.  I love working frontend. \n I'm always keen to take on another project",
       "cta": "drop me an email...",
       "filename": "",
-      "currentProject": "https://wakatime.com/@codebymick/projects/fzfqujwtwz"
+      "currentProject": "https://wakatime.com/@codebymick/projects/fzfqujwtwz",
+      "dowloadRes": "https://codebymick.com/pdf/MickWhiteWebDev.pdf"
     }
   ]
 }

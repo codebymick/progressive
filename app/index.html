@@ -100,23 +100,29 @@
                         </ul>
                         <ul class="squares"></ul>
                     </div>
-                    <div class="legend-wrapper">
-                        <div class="description">A summary of my daily pull requests, issues opened, and commits.
-                            (GITLAB & GITHUB)
+
+                    <div class="legend-wrapper col-xs-12">
+                        <div class="col-lg-8 col-xs-12">
+                            <div class="description">A summary of my daily pull requests, issues opened, and commits.
+                                (GITLAB & GITHUB)
+                            </div>
                         </div>
-                        <div class="contrib-legend text-gray"> Less
-                            <ul class="legend">
-                                <li class="color-1"></li>
-                                <li class="color-2"></li>
-                                <li class="color-3"></li>
-                                <li class="color-4"></li>
-                                <li class="color-5"></li>
-                            </ul>
-                            More
+                        <div class="col-lg-4 col-xs-12 text-right">
+                            <div class="contrib-legend text-gray"> Less
+                                <ul class="legend">
+                                    <li class="color-1"></li>
+                                    <li class="color-2"></li>
+                                    <li class="color-3"></li>
+                                    <li class="color-4"></li>
+                                    <li class="color-5"></li>
+                                </ul>
+                                More
+                            </div>
                         </div>
+
                     </div>
 
-                </div>
+                </>
             </div>
 
         </div>
@@ -139,13 +145,16 @@
                         <h3 class="coral media-heading projects-heading">{{project}}
                             <span class="black smaller project-type">- {{type}}</span>
                         </h3>
-                        <div class="appointment-owner"><span class="appointment-owner-title">Project brief: </span><span
+                        <div class="appointment-owner"><span class="appointment-owner-title"></span><span
                                 class="appointment-owner-name">{{brief}}</span></div>
                     </div><!-- media-body -->
                 </div><!-- appointment media openprojectmodal -->
                 {{/each}}
             </script>
-            <div id="projects-content"></div>
+            <div class="scrollbar" id="style-3">
+                <div id="projects-content" class="force-overflow"></div>
+            </div>
+
         </div><!-- container -->
     </div><!-- page-projects -->
     <div class="page" id="contact">
@@ -154,7 +163,7 @@
                 {{#each contact}}
                 <div class="appointment media openprojectmodal" data-toggle="modal" data-target=""
                      data-name="{{name}}" data-job="{{job}}" data-domain="{{domain}}"
-                     data-qual1="{{qual1}}" data-sample="{{sample}}" data-qual2="{{qual2}}" data-qual3="{{qual3}}"
+                     data-qual1="{{qual1}}" data-sample="{{sample}}" data-qual2="{{qual2}}" data-qual3="{{qual3}}" data-resume="{{downloadRes}}"
                      data-sampleimage="{{filename}}">
                     <div class="media-left media-top">
                         <!--<img class="media-object appointment-img img-rounded" src="images/inspiration/{{filename}}.jpg"-->
@@ -177,8 +186,12 @@
                             <br>
                             <p class="appointment-reason">{{description}}</p>
                             <br>
-                            <p><span class="appointment-reason">{{cta}}</span>
-                                <a href="mailto:{{contact}}@{{domain}}.com"><span class="appointment-owner-title">mail@{{domain}}.com</span></a>
+                            <p>
+                                <a class="btn" href="mailto:{{contact}}@{{domain}}.com">email me</a>
+                            </p>
+                            <p>
+                                <a class="btn"
+                                   href="{{downloadRes}}"> Download Résumé </a>
                             </p>
                         </div>
                     </div><!-- media-body -->
@@ -270,14 +283,14 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" arial-label="Close" role="document"><span
                         aria-hidden="true">&times;</span></button>
-                <div class="h2"><span class="modal-title modal-name"></span> : <span class="modal-type"></span>
-                    <span class="float-right"><a class="modal-link" target="_blank">link</a></span>
+                <div class="h2"><span class="modal-title modal-name"></span> <span class="modal-type"></span>
                 </div>
             </div><!-- modal header -->
             <div class="modal-body">
                 <p class="modal-brief"></p>
                 <p class="modal-outcome"></p>
-                <img class="img-responsive modal-image"/>
+                <a class="modal-link" target="_blank"><img class="img-responsive modal-image"/></a>
+
             </div><!--modal-body-->
         </div><!-- modal content -->
     </div><!-- modal dialog -->
