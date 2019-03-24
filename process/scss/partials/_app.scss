@@ -144,11 +144,19 @@ header {
 
 
 }
-
+@media (max-width: 768px){
+  #slideshow-content{
+    display: none;
+  }
+  #stats{
+    margin-top: 20px;
+  }
+}
 @media only screen and (max-width: 768px) {
   header .navbar-collapse.in {
     background-color: rgba(0, 0, 0, .5);
   }
+
 }
 
 /**  Carousel Fade **/
@@ -167,7 +175,7 @@ header {
       position: absolute;
       width: 100%;
       display: block;
-      background-size: 100% 100%;
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
       background-attachment: fixed;
