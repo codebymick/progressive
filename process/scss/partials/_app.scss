@@ -151,6 +151,19 @@ header {
   #stats{
     margin-top: 20px;
   }
+  #cta-buttons{
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    margin: 2vh auto 0;
+    padding: 2vh 0;
+    left: 0;
+    right: 0;
+    background-color: #222f38;
+  }
+  #contact.page{
+    margin-bottom: 6vh;
+  }
 }
 @media only screen and (max-width: 768px) {
   header .navbar-collapse.in {
