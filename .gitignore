@@ -10,3 +10,12 @@ builds/development/images/**
 *.jpg
 images/
 *.docx
+app/css
+app/data
+app/images
+ap/js
+app/pdf
+app/retro-assets
+app/.ftpquota
+app/.htacess
+app/*.txt
