@@ -20,3 +20,5 @@ app/.ftpquota
 app/*.txt
 app/.htaccess
 app/codebymick.com.html
+*.zip
+*.ico
