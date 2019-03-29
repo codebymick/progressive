@@ -200,4 +200,12 @@ $(document).ready(function(){
   }
 });
 
+//auto scroll projects
+setInterval(function(){
+  $('#projects-content').stop().animate({scrollTop:40},400,'swing',function(){
+    $(this).scrollTop(0).find('project:last').after($('project:first', this));
+  });
+}, 1000);
+
 // TODO effect of collecting page sections to top as user scrolls
+
