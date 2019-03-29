@@ -1,0 +1,114 @@
+{
+  "code": [
+    {
+      "codeType": "HTML"
+    },
+    {
+      "codeType": "CSS"
+    },
+    {
+      "codeType": "Javascript"
+    }
+  ],
+  "slideshow": [
+    {
+      "filename": "codeBack"
+    }
+  ],
+  "dashboard": [
+    {
+      "name": "GIT",
+      "description": "Daily GIT contribs for the past 12 months.  Sourced from GITHUB and GITLAB accounts",
+      "filename": "git",
+      "target": "#gitModal"
+    },
+    {
+      "name": "Today",
+      "description": "Summary of code usage for the most recent working day, sourced from activitywatch and wakatime data.",
+      "filename": "pie",
+      "target": "#pieModal",
+      "pie1": 10,
+      "pie2": 10,
+      "pie3": 30,
+      "pie4": 33,
+      "pie5": 33,
+      "pie6": 34
+    },
+    {
+      "name": "Last 12 months",
+      "description": "Summary of code usage for the past 12 months by code type, sourced from activitywatch and wakatime data.",
+      "filename": "git",
+      "target": "#yearModal"
+    }
+  ],
+  "projects": [
+    {
+      "project": "r3fresh",
+      "type": "Chrome browser extension",
+      "code": "HTML, css, javascript",
+      "brief": "I wanted to automate reloading of my Chrome browser when working in local dev environment.",
+      "outcome": "Utilising opensource code and just playing around, I built a chrome browser extension to monitor changes in local html, css and js files. The browser reloads on detected changes",
+      "filename": "r3fresh",
+      "link": "https://chrome.google.com/webstore/detail/r3fresh/kedglhfbgkhggkbcabnggfaafboeckno"
+    },
+    {
+      "project": "Tansom Studios",
+      "type": "Wordpress Site",
+      "code": "PHP, css, javascript",
+      "brief": "The client wanted to showcase a collection of video projects with the ability to self-update/maintain the site content.  The client requested secure backend access with fast page speeds and SEO optimisation.",
+      "outcome": "I built a custom Wordpress site to offer all the advantages of the popular CMS with bespoke inclusions to allow for the client layouts.",
+      "filename": "tansom",
+      "link": "https://www.tansom-studio.com/"
+    },
+    {
+      "project": "Innitiativ-Horaserweg",
+      "type": "Wordpress Theme",
+      "code": "PHP, css, javascript",
+      "brief": "Customise homepage to suit client design",
+      "outcome": "Wordpress custom theme built to work with existing database.",
+      "filename": "horaserweg",
+      "link": "https://horaserweg.de/ueber/"
+    },
+    {
+      "project": "Space Invaders",
+      "type": "javascript, HTML, CSS",
+      "brief": "Open source project throwing back to the classic retro arcade game.",
+      "outcome": "A fun HTML page with javascript and css",
+      "filename": "spaceinvaders",
+      "link": "https://codepen.io/codebymick/pen/EMOQmM?editors=1111"
+    },
+    {
+      "project": "Parrotfish Lodge",
+      "type": "javascript, HTML, CSS",
+      "brief": "I needed to modernise the existing business site with secure e-commerce features and updatable content.",
+      "outcome": "A php site with mySQL backend, implemented google tag manager & twitter api feed.",
+      "filename": "pfl",
+      "link": "https://web.archive.org/web/20140214003504/http://www.parrotfishlodge.com/"
+    },
+    {
+      "project": "allnations.com",
+      "type": "javascript, HTML, CSS",
+      "brief": "modernise existing business site",
+      "outcome": "Simple HTML and CSS site build. Before Javascript was a thing and before UX centered design swept the world.",
+      "filename": "allnations",
+      "link": "https://web.archive.org/web/20050309051120/http://www.backpackerscentre.com/allnations/"
+    }
+  ],
+  "contact": [
+    {
+      "name": "Mick White",
+      "job": "Frontend Developer",
+      "contact": "mick",
+      "domain": "codebymick",
+      "qual1": "HTML, CSS, Javascript, Sass, Php, GIT, node, photoshop, Vue, Laravel, Angular...",
+      "qual2": "Bachelor of Info Tech, Bachelor of Business",
+      "qual3": "5 years+ professional Web Developer experience",
+      "sample": "https://wakatime.com/@codebymick/projects/fzfqujwtwz",
+      "description": "I love UI centered designs.  I love working frontend. \n I'm always keen to take on another project",
+      "cta": "drop me an email...",
+      "filename": "",
+      "currentProject": "https://wakatime.com/@codebymick/projects/fzfqujwtwz",
+      "downloadRes": "https://codebymick.com/pdf/MickWhiteWebDev.pdf"
+    }
+  ]
+}
