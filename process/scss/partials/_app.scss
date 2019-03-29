@@ -466,3 +466,23 @@ a.btn{
 #contact {
   text-align: center;
 }
+.modal{
+  button{
+    &.close{
+      height: 40px;
+      width: 40px;
+      background: url(../images/icons/close.svg);
+      &:hover{
+        animation: turn 5s infinite;
+      }
+    }
+  }
+}
+@keyframes turn {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-1360deg);
+  }
+}
