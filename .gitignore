@@ -17,5 +17,6 @@ ap/js
 app/pdf
 app/retro-assets
 app/.ftpquota
-app/.htacess
 app/*.txt
+app/.htaccess
+app/codebymick.com.html
