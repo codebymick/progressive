@@ -1,24 +1,43 @@
 #projects{
+  &.page{
+    padding:0;
+  }
   .container{
     width: 100vw;
-    padding: 0;
-    margin: 0;
-
-
+    padding-left:0;
+    padding-right:0;
+    .openprojectmodal{
+      cursor: pointer;
+    }
     .project-row{
-      width: 100vw;
-      height: 350px;
-      border: 1px solid red;
-      padding: 0;
-      margin: 0;
-      flex-direction: row;
-      &:nth-of-type(odd){
-        flex-direction: row-reverse;
-      }
-      img.full-width{
-        width: 100%!important;
+      div{
+        align-self:center;
+        padding-left:0;
+        padding-right:0;
+        position:relative;
+        .content-wrapper{
+          //pointer-events: none;
+          opacity:0;
+          padding:10%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          &.visible{
+            opacity:1;
+          }
+        }
+        img{
+          background-color: white;
+          transition:opacity .5s linear;
+          width: 100%;
+          opacity:1;
+          &:hover{
+            opacity: .5!important;
+          }
+        }
       }
     }
   }
 
 }
+

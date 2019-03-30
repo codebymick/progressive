@@ -361,7 +361,7 @@ header {
   margin: auto;
 
   .modal-dialog {
-    width: 90%;
+    width: 60%;
     margin: 30px auto;
   }
 
@@ -469,6 +469,7 @@ a.btn{
 .modal{
   button{
     &.close{
+      outline:none;
       height: 40px;
       width: 40px;
       background: url(../images/icons/close.svg);
@@ -483,6 +484,6 @@ a.btn{
     transform: rotate(0);
   }
   100% {
-    transform: rotate(-1360deg);
+    transform: rotate(1360deg);
   }
 }
