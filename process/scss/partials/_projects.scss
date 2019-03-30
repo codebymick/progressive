@@ -1,0 +1,24 @@
+#projects{
+  .container{
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+
+
+    .project-row{
+      width: 100vw;
+      height: 350px;
+      border: 1px solid red;
+      padding: 0;
+      margin: 0;
+      flex-direction: row;
+      &:nth-of-type(odd){
+        flex-direction: row-reverse;
+      }
+      img.full-width{
+        width: 100%!important;
+      }
+    }
+  }
+
+}

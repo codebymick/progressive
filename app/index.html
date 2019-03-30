@@ -134,31 +134,35 @@
 
     <div class="page" id="projects">
         <div class="container">
-            <h2 class="page-headline">Project Samples</h2>
 
             <script id="projects-template" type="text/x-handlebars-template">
                 {{#each projects}}
                 <project>
-                    <div class="appointment media openprojectmodal" data-toggle="modal" data-target="#projectmodal"
+                    <div class="project-row openprojectmodal" data-toggle="modal" data-target="#projectmodal"
                          data-name="{{project}}" data-type="{{type}}" data-link="{{link}}"
                          data-brief="{{brief}}" data-outcome="{{outcome}}" data-image="{{filename}}">
-                        <div class="media-left media-top">
-                            <img class="media-object appointment-img img-rounded"
-                                 src="images/inspiration/{{filename}}_tn.jpg" alt="{{project}} photo">
-                        </div><!-- media-left media-top -->
-                        <div class="media-body">
-                            <h3 class="coral media-heading projects-heading">{{project}}
-                                <span class="black smaller project-type">- {{type}}</span>
-                            </h3>
-                            <div class="appointment-owner"><span class="appointment-owner-title"></span><span
-                                    class="appointment-owner-name">{{brief}}</span></div>
+
+
+                        <div class="col-xs-12 col-md-6">
+                            <img class="full-width" src="images/inspiration/{{filename}}_tn.jpg" alt="{{project}} photo">
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <h3 class="coral media-heading projects-heading">{{project}}</h3>
+                            <p class="black smaller project-type">{{type}}</p>
+
+                            <div class="">
+                                <p class="">{{brief}}</p>
+                            </div>
                         </div><!-- media-body -->
                     </div><!-- appointment media openprojectmodal -->
                 </project>
+
+
                 {{/each}}
             </script>
-            <div class="scrollbar" id="style-3">
-                <div id="projects-content" class="force-overflow"></div>
+            <!--<div class="scrollbar" id="style-3">-->
+            <div class="" id="">
+                <div id="projects-content" class=""></div>
             </div>
 
         </div><!-- container -->
