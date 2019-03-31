@@ -137,18 +137,19 @@
 
             <script id="projects-template" type="text/x-handlebars-template">
                 {{#each projects}}
-                    <div class="project-row openprojectmodal" data-toggle="modal" data-target="#projectmodal"
+                    <div class="openprojectmodal" data-toggle="modal" data-target="#projectmodal"
                          data-name="{{project}}" data-type="{{type}}" data-link="{{link}}"
                          data-brief="{{brief}}" data-outcome="{{outcome}}" data-image="{{filename}}">
 
-                        <div class="col-xs-12 col-md-6 col-lg-3">
-
-                            <!--<div class="content-wrapper">-->
-                                <!--<h3 class="coral media-heading projects-heading">{{project}}</h3>-->
-                                <!--<p class="black smaller project-type">{{type}}</p>-->
-                                <!--<p class="smaller">{{brief}}</p>-->
-                            <!--</div>-->
-                            <img class="full-width" src="images/inspiration/{{filename}}_tn.jpg" alt="{{project}} photo">
+                        <div class="col-xs-12 col-md-6 col-lg-3 card">
+                            <div class="front">
+                                <h3 class="coral media-heading projects-heading">{{project}}</h3>
+                                <p class="black smaller project-type">{{type}}</p>
+                                <p class="smaller">{{brief}}</p>
+                            </div>
+                            <div class="back">
+                                <img class="full-width" src="images/inspiration/{{filename}}_tn.jpg" alt="{{project}} photo">
+                            </div>
 
 
                         </div><!-- media-body -->

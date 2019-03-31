@@ -7,33 +7,28 @@
     padding-left:0;
     padding-right:0;
     .openprojectmodal{
+      &:hover .card {
+        transform: rotateY(180deg);
+      }
       cursor: pointer;
-    }
-    .project-row{
       div{
         align-self:center;
         padding-left:0;
         padding-right:0;
         position:relative;
-        .content-wrapper{
-          //pointer-events: none;
-          opacity:0;
+
+        .front{
+          opacity:1;
           padding:10%;
           position: absolute;
           top: 0;
           left: 0;
-          &.visible{
-            opacity:1;
-          }
+          width:100%;
         }
         img{
-          background-color: white;
           transition:opacity .5s linear;
           width: 100%;
           opacity:1;
-          &:hover{
-            opacity: .5!important;
-          }
         }
       }
     }
@@ -41,3 +36,20 @@
 
 }
 
+.card {
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+}
+.front {
+  z-index: 1;
+  transform: rotateY(180deg);
+}
+.back {
+  z-index: 2; /* back side, placed above front */
+  transform: rotateY(0deg);
+}
