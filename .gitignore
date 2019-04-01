@@ -3,22 +3,8 @@ node_modules
 .tmp
 .idea
 
-app/css/app.css
-app/js/app.js
-builds/development/images/**
-*.svg
-*.jpg
-images/
-*.docx
-app/css
-app/data
-app/images
-ap/js
-app/pdf
-app/retro-assets
-app/.ftpquota
-app/*.txt
-app/.htaccess
-app/codebymick.com.html
+app
+favicon
 *.zip
-*.ico
+*.json
+gulpfile.js
