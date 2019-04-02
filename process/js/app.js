@@ -212,3 +212,14 @@ $(document).ready(function () {
 
 // TODO effect of collecting page sections to top as user scrolls
 
+var isIe = navigator.appName == 'Microsoft Internet Explorer' || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof (browser) !== 'undefined' && $.browser.msie == 1);
+
+var visited = jQuery.cookie('visited');
+if (visited == 'yes') {
+    // do nothing
+} else {
+    isIe ? document.getElementById('snackbar').setAttribute('style', 'opacity: 1;') : '';
+}
+jQuery.cookie('visited', 'yes', {
+    expires: 365
+}); // the number of days cookie  will be

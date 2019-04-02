@@ -88,48 +88,48 @@
         </div>
     </div>
     <!--<div class="page" id="gitStats">-->
-        <!--<div class="container">-->
-            <!--<div id="gitStats-content">-->
-                <!--<div id="git" class="col-xs-12">-->
-                    <!--<div id="graph" class="graph">-->
-                        <!--<ul id="months" class="months"></ul>-->
-                        <!--<ul class="days">-->
-                            <!--<li>Sun</li>-->
-                            <!--<li>Mon</li>-->
-                            <!--<li>Tue</li>-->
-                            <!--<li>Wed</li>-->
-                            <!--<li>Thu</li>-->
-                            <!--<li>Fri</li>-->
-                            <!--<li>Sat</li>-->
-                        <!--</ul>-->
-                        <!--<ul class="squares"></ul>-->
-                    <!--</div>-->
+    <!--<div class="container">-->
+    <!--<div id="gitStats-content">-->
+    <!--<div id="git" class="col-xs-12">-->
+    <!--<div id="graph" class="graph">-->
+    <!--<ul id="months" class="months"></ul>-->
+    <!--<ul class="days">-->
+    <!--<li>Sun</li>-->
+    <!--<li>Mon</li>-->
+    <!--<li>Tue</li>-->
+    <!--<li>Wed</li>-->
+    <!--<li>Thu</li>-->
+    <!--<li>Fri</li>-->
+    <!--<li>Sat</li>-->
+    <!--</ul>-->
+    <!--<ul class="squares"></ul>-->
+    <!--</div>-->
 
-                    <!--<div class="legend-wrapper col-xs-12">-->
-                        <!--<div class="col-lg-8 col-xs-12">-->
-                            <!--<div class="description">A summary of my daily pull requests, issues opened, and commits.-->
-                                <!--(GITLAB & GITHUB)-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="col-lg-4 col-xs-12 text-right">-->
-                            <!--<div class="contrib-legend text-gray"> Less-->
-                                <!--<ul class="legend">-->
-                                    <!--<li class="color-1"></li>-->
-                                    <!--<li class="color-2"></li>-->
-                                    <!--<li class="color-3"></li>-->
-                                    <!--<li class="color-4"></li>-->
-                                    <!--<li class="color-5"></li>-->
-                                <!--</ul>-->
-                                <!--More-->
-                            <!--</div>-->
-                        <!--</div>-->
+    <!--<div class="legend-wrapper col-xs-12">-->
+    <!--<div class="col-lg-8 col-xs-12">-->
+    <!--<div class="description">A summary of my daily pull requests, issues opened, and commits.-->
+    <!--(GITLAB & GITHUB)-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-lg-4 col-xs-12 text-right">-->
+    <!--<div class="contrib-legend text-gray"> Less-->
+    <!--<ul class="legend">-->
+    <!--<li class="color-1"></li>-->
+    <!--<li class="color-2"></li>-->
+    <!--<li class="color-3"></li>-->
+    <!--<li class="color-4"></li>-->
+    <!--<li class="color-5"></li>-->
+    <!--</ul>-->
+    <!--More-->
+    <!--</div>-->
+    <!--</div>-->
 
-                    <!--</div>-->
+    <!--</div>-->
 
-                <!--</div>-->
-            <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
 
-        <!--</div>-->
+    <!--</div>-->
     <!--</div>-->
 
     <div class="page" id="projects">
@@ -137,23 +137,24 @@
 
             <script id="projects-template" type="text/x-handlebars-template">
                 {{#each projects}}
-                    <div class="openprojectmodal" data-toggle="modal" data-target="#projectmodal"
-                         data-name="{{project}}" data-type="{{type}}" data-link="{{link}}"
-                         data-brief="{{brief}}" data-outcome="{{outcome}}" data-image="{{filename}}">
+                <div class="openprojectmodal" data-toggle="modal" data-target="#projectmodal"
+                     data-name="{{project}}" data-type="{{type}}" data-link="{{link}}"
+                     data-brief="{{brief}}" data-outcome="{{outcome}}" data-image="{{filename}}">
 
-                        <div class="col-xs-12 col-md-6 col-lg-3 card">
-                            <div class="front">
-                                <h3 class="coral media-heading projects-heading">{{project}}</h3>
-                                <p class="black smaller project-type">{{type}}</p>
-                                <p class="smaller">{{brief}}</p>
-                            </div>
-                            <div class="back">
-                                <img class="full-width" src="images/inspiration/{{filename}}_tn.jpg" alt="{{project}} photo">
-                            </div>
+                    <div class="col-xs-12 col-md-6 col-lg-3 card">
+                        <div class="front">
+                            <h3 class="coral media-heading projects-heading">{{project}}</h3>
+                            <p class="black smaller project-type">{{type}}</p>
+                            <p class="smaller">{{brief}}</p>
+                        </div>
+                        <div class="back">
+                            <img class="full-width" src="images/inspiration/{{filename}}_tn.jpg"
+                                 alt="{{project}} photo">
+                        </div>
 
 
-                        </div><!-- media-body -->
-                    </div><!-- appointment media openprojectmodal -->
+                    </div><!-- media-body -->
+                </div><!-- appointment media openprojectmodal -->
 
 
                 {{/each}}
@@ -196,13 +197,13 @@
                             <p class="appointment-reason">{{description}}</p>
                             <br>
                             <div id="cta-buttons">
-                            <p>
-                                <a class="btn" href="mailto:{{contact}}@{{domain}}.com">email me</a>
-                            </p>
-                            <p>
-                                <a class="btn"
-                                   href="{{downloadRes}}" target="_blank"> Download Résumé </a>
-                            </p>
+                                <p>
+                                    <a class="btn" href="mailto:{{contact}}@{{domain}}.com">email me</a>
+                                </p>
+                                <p>
+                                    <a class="btn"
+                                       href="{{downloadRes}}" target="_blank"> Download Résumé </a>
+                                </p>
                             </div>
                         </div>
                     </div><!-- media-body -->
@@ -306,10 +307,13 @@
         </div><!-- modal content -->
     </div><!-- modal dialog -->
 </div><!-- modal fade -->
-<div class="snackbar">
+<div class="modal snackbar">
+    <button type="button" class="close" data-dismiss="modal" arial-label="Close" role="document"><span
+            aria-hidden="true"></span></button>
     <div class="container">
-        <p class="widescreen">this page is optimised for a wider screen</p>
-        <p class="ie">You should do yourself a favour and upgrade from IE today!</p>
+        <p id="widescreen">this page is optimised for a wider screen</p>
+        <p id="ie">You should do yourself a favour and upgrade from IE today!</p>
+    </div>
 </div>
 <!--<script src="js/jquery.min.js"></script>-->
 <script src="js/app.js"></script>
