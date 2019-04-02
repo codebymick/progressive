@@ -1,0 +1,12 @@
+.DS_Store
+node_modules
+.tmp
+.idea
+
+app
+!app/index.html
+favicon
+*.zip
+*.json
+gulpfile.js
+process/js/bootstrap_custom.js
