@@ -3,7 +3,7 @@ node_modules
 .tmp
 .idea
 
-app
+app/**/*.*
 !app/index.html
 favicon
 *.zip
